@@ -215,7 +215,7 @@
     },
     "license": {
       "type": "string",
-      "enum": ["MIT", "Apache-2.0", "CC-BY-4.0", "Unlicense", "Proprietary"],
+      "enum": ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "CC-BY-4.0", "Unlicense", "Proprietary"],
       "description": "License of the recipe code/content as released by its author."
     },
     "notes": {

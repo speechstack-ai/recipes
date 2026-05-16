@@ -1,0 +1,56 @@
+{
+  "id": "livekit-drivethru-ordering",
+  "slug": "livekit-drivethru-ordering",
+  "title": "LiveKit Drive-Thru Order Taker — Kelly",
+  "description": "Voice agent that takes drive-thru orders, manages a structured cart of combos, Happy Meals, à-la-carte items and sauces, and triggers a checkout RPC for a live order-board UI. Includes ambient background audio and an evaluation suite.",
+  "framework": "LiveKit Agents",
+  "use_case": "order-taking",
+  "industry": "restaurant",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "metrics": {
+    "latency_p50_ms": 600,
+    "latency_p95_ms": 950,
+    "latency_display": "~600-950ms",
+    "cost_per_minute_usd_min": 0.06,
+    "cost_per_minute_usd_max": 0.09,
+    "cost_display": "$0.06 - $0.09"
+  },
+  "prompt_file": "prompts/livekit-drivethru-ordering.md",
+  "config": {
+    "voice_id": null,
+    "temperature": null,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [
+      { "name": "list_order_items", "description": "Return the current cart contents" },
+      { "name": "order_combo_meal", "description": "Add a combo meal with size, drink, side" },
+      { "name": "order_happy_meal", "description": "Add a Happy Meal with toy/drink/side options" },
+      { "name": "order_regular_item", "description": "Add an à-la-carte menu item" },
+      { "name": "order_sauce", "description": "Add a sauce to the order" },
+      { "name": "remove_order_item", "description": "Remove an item from the cart by id" },
+      { "name": "complete_order", "description": "Finalize the order and emit show_checkout RPC" }
+    ]
+  },
+  "github_source_url": "https://github.com/livekit/agents/tree/main/examples/drive-thru",
+  "demo_url": "https://github.com/livekit-examples/dev-day-demos/tree/main/drive-thru",
+  "tags": ["restaurant", "qsr", "order-taking", "multi-tool", "cartesia", "deepgram"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "github_discovery",
+  "verified": false,
+  "featured": true,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "license": "Apache-2.0",
+  "notes": "Repo uses livekit.plugins.cartesia.TTS(model='sonic-3'), deepgram.STT(nova-3), openai.LLM and the MultilingualModel turn detector. The Dev Day repo extends this with a Next.js order-board frontend over LiveKit RPC."
+}
