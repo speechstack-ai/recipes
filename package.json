@@ -1,0 +1,28 @@
+{
+  "name": "speechstack-recipes",
+  "version": "0.1.0",
+  "description": "Open-source recipe collection powering speechstack.com",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "liveness": "node scripts/liveness.js",
+    "check": "npm run validate && npm run liveness"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "license": "SEE LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/speechstack-dev/recipes"
+  },
+  "bugs": {
+    "url": "https://github.com/speechstack-dev/recipes/issues"
+  },
+  "homepage": "https://speechstack.com"
+}

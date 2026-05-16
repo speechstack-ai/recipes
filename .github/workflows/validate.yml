@@ -1,0 +1,62 @@
+name: Validate Recipes
+
+on:
+  pull_request:
+    paths:
+      - 'recipes/**'
+      - 'schema/**'
+      - 'data/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+  push:
+    branches: [main]
+    paths:
+      - 'recipes/**'
+      - 'schema/**'
+      - 'data/**'
+
+jobs:
+  schema-and-rules:
+    name: Schema and business rules
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate recipes
+        run: npm run validate
+
+  liveness:
+    name: URL liveness
+    runs-on: ubuntu-latest
+    # Only run on PRs - third-party downtime shouldn't fail main builds
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Check URL liveness
+        run: npm run liveness
+        # Liveness failures are blocking but warnings are informational
+        continue-on-error: false
+
+  label-ready:
+    name: Auto-label ready-for-review
+    needs: [schema-and-rules, liveness]
+    if: github.event_name == 'pull_request' && success()
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: ready-for-review
