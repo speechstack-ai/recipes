@@ -1,0 +1,29 @@
+name: Notify web
+
+# Fires repository_dispatch at speechstack-ai/web whenever recipes data
+# changes on main, so the web repo can pull the latest into its bundled
+# public/data/recipes.json. Requires a fine-grained PAT in the secret
+# WEB_DISPATCH_TOKEN with contents:write on speechstack-ai/web. The
+# default GITHUB_TOKEN can't fire repository_dispatch cross-repo.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "recipes/**"
+      - "schema/**"
+      - "data/**"
+  workflow_dispatch: {}
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fire repository_dispatch on speechstack-ai/web
+        env:
+          GH_TOKEN: ${{ secrets.WEB_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/speechstack-ai/web/dispatches \
+            -f event_type=recipes-updated \
+            -F client_payload[ref]=main \
+            -F client_payload[sha]=${{ github.sha }}
