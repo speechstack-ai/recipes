@@ -1,0 +1,53 @@
+{
+  "id": "deepgram-dental-receptionist",
+  "slug": "deepgram-dental-receptionist",
+  "title": "Deepgram Dental Office Receptionist (Twilio + Voice Agent API)",
+  "description": "Inbound AI receptionist for a dental office that checks availability, books, looks up, and cancels appointments through function calls. Uses Deepgram's unified Voice Agent API and Twilio Media Streams, with one-command Fly.io deploy.",
+  "framework": "Custom",
+  "use_case": "after-hours-receptionist",
+  "industry": "dental",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 500,
+    "latency_p95_ms": 800,
+    "latency_display": "~500-800ms",
+    "cost_per_minute_usd_min": 0.08,
+    "cost_per_minute_usd_max": 0.10,
+    "cost_display": "$0.08 - $0.10"
+  },
+  "prompt_file": "prompts/deepgram-dental-receptionist.md",
+  "config": {
+    "voice_id": "aura-2-asteria-en",
+    "temperature": 0.7,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [
+      { "name": "check_availability", "description": "List open appointment slots for a date range" },
+      { "name": "book_appointment", "description": "Create an appointment for a named patient" },
+      { "name": "lookup_appointment", "description": "Find an existing appointment by patient details" },
+      { "name": "cancel_appointment", "description": "Cancel an existing appointment by id" }
+    ]
+  },
+  "github_source_url": "https://github.com/deepgram-devs/deepgram-voice-agent-inbound-telephony",
+  "demo_url": "https://www.twilio.com/en-us/blog/partners/integrations/building-an-inbound-voice-agent-with-twilio-and-deepgram",
+  "tags": ["dental", "receptionist", "twilio", "deepgram-voice-agent", "function-calling"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "github_discovery",
+  "verified": false,
+  "featured": true,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "license": "MIT",
+  "notes": "Source actually uses Deepgram Flux (flux-general-en) for STT — not yet on the allowed list, so mapped to Deepgram Nova-3. The Voice Agent API bundles STT+LLM+TTS into a single WebSocket; LLM is represented separately as GPT-4o, the default 'think' provider in the example settings."
+}

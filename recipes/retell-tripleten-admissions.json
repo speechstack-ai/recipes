@@ -1,0 +1,52 @@
+{
+  "id": "retell-tripleten-admissions",
+  "slug": "retell-tripleten-admissions",
+  "title": "Retell EdTech Admissions Qualifier — Charlotte at TripleTen",
+  "description": "Outbound voice agent that re-engages prospective bootcamp students who completed a career quiz, answers program and pricing questions, and triggers a HubSpot CRM workflow to book a live demo with the sales team.",
+  "framework": "Retell",
+  "use_case": "lead-qualification",
+  "industry": "education",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Claude Sonnet 4.5",
+    "tts": "ElevenLabs Flash v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 620,
+    "latency_p95_ms": 1000,
+    "latency_display": "~620-1000ms",
+    "cost_per_minute_usd_min": 0.13,
+    "cost_per_minute_usd_max": 0.21,
+    "cost_display": "$0.13 - $0.21"
+  },
+  "prompt_file": "prompts/retell-tripleten-admissions.md",
+  "config": {
+    "voice_id": "elevenlabs_default",
+    "temperature": null,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [
+      { "name": "hubspot_update_lead", "description": "Push captured info back to HubSpot CRM" },
+      { "name": "send_calendly_link", "description": "Send SMS Calendly link for live demo booking" },
+      { "name": "transfer_to_advisor", "description": "Warm transfer to human admissions advisor" }
+    ]
+  },
+  "github_source_url": "https://www.retellai.com/case-study/tripleten-ai-call-automation-admissions-case-study",
+  "demo_url": "https://www.retellai.com/case-study/tripleten-ai-call-automation-admissions-case-study",
+  "tags": ["edtech", "lead-qualification", "outbound", "retell", "hubspot"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "vendor_showcase",
+  "verified": false,
+  "featured": false,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "license": "Proprietary",
+  "notes": "Pipeline reconstructed from Retell's standard menu (Deepgram + ElevenLabs + bring-your-own-LLM). The specific LLM TripleTen uses is not named in the case study; Claude Sonnet 4.5 is a reasonable default from Retell's documented LLM list. Latency band anchored on Retell's published '~620ms average' benchmark (retellai.com/resources/ai-voice-agent-latency-face-off-2025). Branded caller ID was called out as critical — pick-up rates dropped 20% without it."
+}

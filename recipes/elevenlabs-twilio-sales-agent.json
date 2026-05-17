@@ -1,0 +1,50 @@
+{
+  "id": "elevenlabs-twilio-sales-agent",
+  "slug": "elevenlabs-twilio-sales-agent",
+  "title": "ElevenLabs Outbound Sales Agent — Eric the Car Salesperson",
+  "description": "Outbound AI sales agent that calls a prospect on Twilio and runs a discovery conversation about a new car. Built on ElevenLabs Conversational AI's Twilio bridge; supports dynamic prompts and first messages per call.",
+  "framework": "ElevenLabs Conversational",
+  "use_case": "sales",
+  "industry": "automotive",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "ElevenLabs Scribe",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Flash v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 450,
+    "latency_p95_ms": 750,
+    "latency_display": "~450-750ms",
+    "cost_per_minute_usd_min": 0.09,
+    "cost_per_minute_usd_max": 0.14,
+    "cost_display": "$0.09 - $0.14"
+  },
+  "prompt_file": "prompts/elevenlabs-twilio-sales-agent.md",
+  "config": {
+    "voice_id": "agent_default",
+    "temperature": null,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [
+      { "name": "outbound_call", "description": "Initiate an outbound call with dynamic prompt and first_message" }
+    ]
+  },
+  "github_source_url": "https://github.com/elevenlabs/elevenlabs-examples",
+  "demo_url": "https://elevenlabs.io/docs/agents-platform/phone-numbers/twilio-integration",
+  "tags": ["automotive", "sales", "outbound", "twilio", "elevenlabs", "conversational-ai"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "github_discovery",
+  "verified": false,
+  "featured": false,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-17T00:00:00Z",
+  "license": "MIT",
+  "notes": "ElevenLabs Conversational AI bundles STT/LLM/TTS — the LLM is selectable per-agent in the dashboard. STT defaults to ElevenLabs Scribe. Cost band uses ElevenLabs Agents' published $0.08–0.12/min plus ~$0.01/min Twilio. The original `conversational-ai/twilio/javascript` example folder in `elevenlabs/elevenlabs-examples` was removed during the repo's restructure into `agents/`, `templates/`, and `text-to-speech/` directories; `github_source_url` now points at the parent repo and `demo_url` at the official Twilio integration docs page under ElevenLabs' Agents Platform branding."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "pipecat-twilio-quickstart",
+  "slug": "pipecat-twilio-quickstart",
+  "title": "Pipecat Twilio Phone Bot Quickstart",
+  "description": "Minimal production-ready Pipecat phone agent that answers inbound Twilio calls via Media Streams. Ships with Deepgram + OpenAI + Cartesia and works as a base template for any voice use case.",
+  "framework": "Pipecat",
+  "use_case": "ivr-replacement",
+  "industry": "other",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 550,
+    "latency_p95_ms": 850,
+    "latency_display": "~550-850ms",
+    "cost_per_minute_usd_min": 0.05,
+    "cost_per_minute_usd_max": 0.09,
+    "cost_display": "$0.05 - $0.09"
+  },
+  "prompt_file": "prompts/pipecat-twilio-quickstart.md",
+  "config": {
+    "voice_id": null,
+    "temperature": 0.7,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": []
+  },
+  "github_source_url": "https://github.com/pipecat-ai/pipecat-quickstart-phone-bot",
+  "demo_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/twilio-chatbot",
+  "tags": ["pipecat", "twilio", "starter", "open-source", "self-hosted"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "github_discovery",
+  "verified": false,
+  "featured": false,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "license": "BSD-2-Clause",
+  "notes": "First startup downloads the Silero VAD model (~15 seconds). Pipecat is self-hosted so the cost band excludes hosting; latency assumes a region-co-located VM."
+}

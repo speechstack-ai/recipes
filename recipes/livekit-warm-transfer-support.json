@@ -1,0 +1,53 @@
+{
+  "id": "livekit-warm-transfer-support",
+  "slug": "livekit-warm-transfer-support",
+  "title": "LiveKit Tier-1 Support with Warm Transfer to Supervisor",
+  "description": "Tier-1 customer support voice agent that resolves common issues and, when escalation is needed, places the customer on hold, dials a supervisor, briefs them with a concise call summary, and bridges all three parties.",
+  "framework": "LiveKit Agents",
+  "use_case": "technical-support",
+  "industry": "telecom",
+  "languages": ["en-US"],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4.1",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "LiveKit SIP"
+  },
+  "metrics": {
+    "latency_p50_ms": 600,
+    "latency_p95_ms": 950,
+    "latency_display": "~600-950ms",
+    "cost_per_minute_usd_min": 0.08,
+    "cost_per_minute_usd_max": 0.12,
+    "cost_display": "$0.08 - $0.12"
+  },
+  "prompt_file": "prompts/livekit-warm-transfer-support.md",
+  "config": {
+    "voice_id": null,
+    "temperature": null,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [
+      { "name": "search_kb", "description": "Search the internal knowledge base for resolution articles" },
+      { "name": "create_ticket", "description": "Create a support ticket with structured fields" },
+      { "name": "summarize_call", "description": "Produce a 2-sentence summary of the conversation so far" },
+      { "name": "transfer_to_supervisor", "description": "Place customer on hold, dial supervisor, brief them, then bridge" }
+    ]
+  },
+  "github_source_url": "https://github.com/livekit/agents/tree/main/examples/warm-transfer",
+  "demo_url": "https://docs.livekit.io/agents/build/workflows/",
+  "tags": ["support", "warm-transfer", "escalation", "livekit", "sip"],
+  "contributor": {
+    "github": "speechstack",
+    "twitter": "speechstack",
+    "name": "Speechstack Team",
+    "website": "https://speechstack.com"
+  },
+  "source": "github_discovery",
+  "verified": false,
+  "featured": false,
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "license": "Apache-2.0",
+  "notes": "Per LiveKit examples README: 'Demonstrates supervisor escalation workflows for call centers, showing how to implement warm transfers where agents can brief supervisors before connecting them to customers.' Latency band reflects Cartesia Sonic-3's published 40 ms P50 / 90 ms P90 TTFA."
+}
