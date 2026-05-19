@@ -1,7 +1,7 @@
 {
   "id": "pipecat-twilio-quickstart",
   "slug": "pipecat-twilio-quickstart",
-  "title": "Pipecat Twilio Phone Bot Quickstart",
+  "title": "Phone Bot Quickstart",
   "description": "Minimal production-ready Pipecat phone agent that answers inbound Twilio calls via Media Streams. Ships with Deepgram + OpenAI + Cartesia and works as a base template for any voice use case.",
   "framework": "Pipecat",
   "use_case": "ivr-replacement",
@@ -42,7 +42,7 @@
   "verified": false,
   "featured": false,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "BSD-2-Clause",
   "notes": "First startup downloads the Silero VAD model (~15 seconds). Pipecat is self-hosted so the cost band excludes hosting; latency assumes a region-co-located VM."
 }

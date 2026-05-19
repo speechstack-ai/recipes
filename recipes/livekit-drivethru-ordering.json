@@ -1,7 +1,7 @@
 {
   "id": "livekit-drivethru-ordering",
   "slug": "livekit-drivethru-ordering",
-  "title": "LiveKit Drive-Thru Order Taker — Kelly",
+  "title": "Drive-Thru Order Taker",
   "description": "Voice agent that takes drive-thru orders, manages a structured cart of combos, Happy Meals, à-la-carte items and sauces, and triggers a checkout RPC for a live order-board UI. Includes ambient background audio and an evaluation suite.",
   "framework": "LiveKit Agents",
   "use_case": "order-taking",
@@ -50,7 +50,7 @@
   "verified": false,
   "featured": true,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "Apache-2.0",
   "notes": "Repo uses livekit.plugins.cartesia.TTS(model='sonic-3'), deepgram.STT(nova-3), openai.LLM and the MultilingualModel turn detector. The Dev Day repo extends this with a Next.js order-board frontend over LiveKit RPC."
 }

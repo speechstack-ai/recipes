@@ -1,7 +1,7 @@
 {
   "id": "livekit-warm-transfer-support",
   "slug": "livekit-warm-transfer-support",
-  "title": "LiveKit Tier-1 Support with Warm Transfer to Supervisor",
+  "title": "Tier-1 Support with Warm Transfer",
   "description": "Tier-1 customer support voice agent that resolves common issues and, when escalation is needed, places the customer on hold, dials a supervisor, briefs them with a concise call summary, and bridges all three parties.",
   "framework": "LiveKit Agents",
   "use_case": "technical-support",
@@ -47,7 +47,7 @@
   "verified": false,
   "featured": false,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "Apache-2.0",
   "notes": "Per LiveKit examples README: 'Demonstrates supervisor escalation workflows for call centers, showing how to implement warm transfers where agents can brief supervisors before connecting them to customers.' Latency band reflects Cartesia Sonic-3's published 40 ms P50 / 90 ms P90 TTFA."
 }

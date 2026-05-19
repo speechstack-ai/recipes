@@ -1,7 +1,7 @@
 {
   "id": "vapi-healthcare-scheduler",
   "slug": "vapi-healthcare-scheduler",
-  "title": "Vapi Healthcare Scheduler — Amy at VAPI Health Clinic",
+  "title": "Healthcare Appointment Scheduler",
   "description": "AI voice receptionist for a medical clinic that books, reschedules, and cancels appointments via cal.com, enforces 9–5 business hours, and routes urgent callers to human staff. Ported verbatim from Vapi's official example assistant.",
   "framework": "Vapi",
   "use_case": "scheduling",
@@ -50,7 +50,7 @@
   "verified": false,
   "featured": true,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "MIT",
   "notes": "ElevenLabs voice model in the source file is literally 'eleven_flash_v2' with voiceId 'sarah'; normalized to allowed-list 'ElevenLabs Flash v2.5'. Source uses LiveKit smart endpointing waitFunction '20 + 500 * sqrt(x) + 2500 * x^3'; maxTokens=225 in source."
 }

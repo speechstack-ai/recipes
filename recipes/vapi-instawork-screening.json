@@ -1,7 +1,7 @@
 {
   "id": "vapi-instawork-screening",
   "slug": "vapi-instawork-screening",
-  "title": "Vapi Candidate Screening Interviewer — Instawork Pattern",
+  "title": "Candidate Screening Interviewer",
   "description": "Outbound voice agent that conducts a structured candidate phone-screen for an hourly-labor marketplace: confirms identity, runs role-specific skill questions, captures structured answers, and approves or rejects the candidate downstream.",
   "framework": "Vapi",
   "use_case": "research-interview",
@@ -47,7 +47,7 @@
   "verified": false,
   "featured": false,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "Proprietary",
   "notes": "Instawork's exact stack is not publicly disclosed; pipeline reflects Vapi's documented 'flexible model configuration' defaults. Latency P50 anchored on Telnyx's benchmark of Vapi at '~465ms end-to-end in optimal configurations'. Vapi explicitly cited structured outputs and forward-deployed engineering as Instawork's reasons for choosing them over ElevenLabs and LiveKit."
 }

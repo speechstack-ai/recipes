@@ -9,6 +9,7 @@
  *   4. Vendor allowlist check
  *   5. Use case / industry controlled vocabulary check
  *   6. Prompt file existence check
+ *   7. Title rules (no em/en dashes, no vendor brand names)
  *
  * Exits 0 on success, 1 on failure. Designed to run both locally and in CI.
  */
@@ -41,6 +42,52 @@ const industries = readJson(INDUSTRIES_PATH);
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const validate = ajv.compile(schema);
+
+// Brand tokens derived from data/vendors.json. We take the first space-delimited
+// word of each vendor entry, then the first hyphen chunk of that word — so
+// "Deepgram Nova-3" → "Deepgram" and "GPT-4o-mini" → "GPT". `Custom` and `Web`
+// are sentinel values, not brands, so we skip them.
+const VENDOR_BRAND_SKIP = new Set(['Custom', 'Web']);
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function getVendorBrandTokens(vendorsData) {
+  const tokens = new Set();
+  for (const category of Object.values(vendorsData)) {
+    if (!Array.isArray(category)) continue;
+    for (const value of category) {
+      if (typeof value !== 'string') continue;
+      const firstWord = value.split(/\s+/)[0] || '';
+      const brand = firstWord.split('-')[0];
+      if (brand && !VENDOR_BRAND_SKIP.has(brand)) tokens.add(brand);
+    }
+  }
+  return [...tokens];
+}
+
+function checkTitleRules(title, brandTokens) {
+  const issues = [];
+  if (/[—–]/.test(title)) {
+    issues.push(
+      'title contains an em or en dash — use a colon or rewrite the title. ' +
+        'Good titles describe the use case in plain words.'
+    );
+  }
+  for (const token of brandTokens) {
+    const re = new RegExp(`\\b${escapeRegExp(token)}\\b`, 'i');
+    if (re.test(title)) {
+      issues.push(
+        `title contains vendor name "${token}" — keep titles focused on the use case. ` +
+          'The stack is already shown elsewhere on the recipe card.'
+      );
+    }
+  }
+  return issues;
+}
+
+const brandTokens = getVendorBrandTokens(vendors);
 
 const recipeFiles = fs
   .readdirSync(RECIPES_DIR)
@@ -120,7 +167,14 @@ for (const file of recipeFiles) {
     );
   }
 
-  // 7. Prompt file existence
+  // 7. Title rules: no em/en dashes, no vendor brand names
+  if (typeof recipe.title === 'string') {
+    for (const issue of checkTitleRules(recipe.title, brandTokens)) {
+      errors.push(`[${file}] ${issue}`);
+    }
+  }
+
+  // 8. Prompt file existence
   if (recipe.prompt_file) {
     const promptPath = path.join(RECIPES_DIR, recipe.prompt_file);
     if (!fs.existsSync(promptPath)) {
@@ -130,14 +184,14 @@ for (const file of recipeFiles) {
     }
   }
 
-  // 8. Either raw_prompt OR prompt_file should be present (warning, not error)
+  // 9. Either raw_prompt OR prompt_file should be present (warning, not error)
   if (!recipe.raw_prompt && !recipe.prompt_file) {
     warnings.push(
       `[${file}] No raw_prompt or prompt_file. The recipe will be missing prompt content on the site.`
     );
   }
 
-  // 9. Both is suspicious
+  // 10. Both is suspicious
   if (recipe.raw_prompt && recipe.prompt_file) {
     warnings.push(
       `[${file}] Both raw_prompt and prompt_file are set. The site will prefer prompt_file.`
