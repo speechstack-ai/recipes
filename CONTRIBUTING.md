@@ -24,6 +24,17 @@ A recipe is publishable if:
 - **Economics** are reported (cost per minute and latency), even as estimates.
 - **Vendor names** match the canonical list in [`data/vendors.json`](./data/vendors.json). If your stack uses a vendor not on the list, propose its addition in the same PR.
 
+## The 4-criteria template definition
+
+This is the scope bar for the directory. Every recipe PR is checked against all four. Failing any one is grounds for rejection — not "we'll fix it later," not "merge as draft."
+
+1. **Schema-able artifact** — every field of the JSON schema can be filled (framework, stack, prompt, config, source URL). No mandatory narrative prose.
+2. **Forkable or copyable** — a builder can clone something concrete: config block, prompt, JSON export, GitHub repo, Vapi assistant ID, etc.
+3. **Specific named outcome** — solves one named use case ("AI receptionist for dental practices"; "post-meeting summary pipeline from Granola to Notion"). Not "how to think about voice AI."
+4. **Multi-component stack** — at least 2 named tools/services wired together.
+
+If your submission is a single-tool walkthrough, an opinion piece, a concept explainer, or a closed-runtime no-code flow with no exportable artifact, it fails one of these — please don't open the PR. See `SpeechStack Positioning.md` (internal) for the full out-of-scope list.
+
 ## Title rules
 
 The recipe `title` describes the **use case** in plain words. The stack, framework, and customer brand are shown elsewhere on the recipe card — keep them out of the title.
