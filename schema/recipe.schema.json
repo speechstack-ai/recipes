@@ -36,7 +36,7 @@
       "type": "string",
       "minLength": 10,
       "maxLength": 120,
-      "description": "Human-readable title, e.g. 'Automated Dental Clinic Scheduling Assistant'."
+      "description": "Human-readable title that describes the use case in plain words, e.g. 'Dental Office Receptionist' or 'Drive-Thru Order Taker'. Must not contain vendor brand names (Vapi, Retell, Deepgram, etc.) or em/en dashes — both are enforced by scripts/validate.js. See CONTRIBUTING.md for the full title rules."
     },
     "description": {
       "type": "string",

@@ -1,7 +1,7 @@
 {
   "id": "retell-tripleten-admissions",
   "slug": "retell-tripleten-admissions",
-  "title": "Retell EdTech Admissions Qualifier — Charlotte at TripleTen",
+  "title": "EdTech Admissions Qualifier",
   "description": "Outbound voice agent that re-engages prospective bootcamp students who completed a career quiz, answers program and pricing questions, and triggers a HubSpot CRM workflow to book a live demo with the sales team.",
   "framework": "Retell",
   "use_case": "lead-qualification",
@@ -46,7 +46,7 @@
   "verified": false,
   "featured": false,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "Proprietary",
   "notes": "Pipeline reconstructed from Retell's standard menu (Deepgram + ElevenLabs + bring-your-own-LLM). The specific LLM TripleTen uses is not named in the case study; Claude Sonnet 4.5 is a reasonable default from Retell's documented LLM list. Latency band anchored on Retell's published '~620ms average' benchmark (retellai.com/resources/ai-voice-agent-latency-face-off-2025). Branded caller ID was called out as critical — pick-up rates dropped 20% without it."
 }

@@ -1,7 +1,7 @@
 {
   "id": "deepgram-dental-receptionist",
   "slug": "deepgram-dental-receptionist",
-  "title": "Deepgram Dental Office Receptionist (Twilio + Voice Agent API)",
+  "title": "Dental Office Receptionist",
   "description": "Inbound AI receptionist for a dental office that checks availability, books, looks up, and cancels appointments through function calls. Uses Deepgram's unified Voice Agent API and Twilio Media Streams, with one-command Fly.io deploy.",
   "framework": "Custom",
   "use_case": "after-hours-receptionist",
@@ -47,7 +47,7 @@
   "verified": false,
   "featured": true,
   "created_at": "2026-05-16T00:00:00Z",
-  "updated_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-18T00:00:00Z",
   "license": "MIT",
   "notes": "Source actually uses Deepgram Flux (flux-general-en) for STT — not yet on the allowed list, so mapped to Deepgram Nova-3. The Voice Agent API bundles STT+LLM+TTS into a single WebSocket; LLM is represented separately as GPT-4o, the default 'think' provider in the example settings."
 }

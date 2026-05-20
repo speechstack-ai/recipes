@@ -24,6 +24,25 @@ A recipe is publishable if:
 - **Economics** are reported (cost per minute and latency), even as estimates.
 - **Vendor names** match the canonical list in [`data/vendors.json`](./data/vendors.json). If your stack uses a vendor not on the list, propose its addition in the same PR.
 
+## Title rules
+
+The recipe `title` describes the **use case** in plain words. The stack, framework, and customer brand are shown elsewhere on the recipe card — keep them out of the title.
+
+- **No vendor names.** No `Vapi`, `Retell`, `LiveKit`, `Pipecat`, `ElevenLabs`, `Deepgram`, `Cartesia`, `Twilio`, `Claude`, `GPT`, etc. The validator checks the title against [`data/vendors.json`](./data/vendors.json) and rejects any brand match.
+- **No em dashes or en dashes.** Use a colon, or rewrite the title.
+- **No customer or persona names.** "Amy at VAPI Health Clinic" and "Charlotte at TripleTen" belong in the description, not the title.
+- **Lead with the use case.** "Dental Office Receptionist", not "Deepgram Dental Office Receptionist (Twilio + Voice Agent API)".
+
+Good examples:
+
+- `Dental Office Receptionist`
+- `Drive-Thru Order Taker`
+- `Healthcare Appointment Scheduler`
+- `Outbound Car Sales Agent`
+- `Tier-1 Support with Warm Transfer`
+
+The `id` and `slug` still encode the framework — that's where vendor scoping lives.
+
 ## What we reject
 
 - Recipes without a public source link
