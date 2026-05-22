@@ -6,6 +6,7 @@
 
 ## Checklist
 
+- [ ] My recipe passes the **[4-criteria template definition](../CONTRIBUTING.md#the-4-criteria-template-definition)**: schema-able artifact, forkable or copyable, specific named outcome, multi-component stack (2+ tools)
 - [ ] I copied `recipes/_template.json` and filled in all required fields
 - [ ] The filename matches the recipe's `id` field (e.g. `vapi-foo-bar.json` ↔ `"id": "vapi-foo-bar"`)
 - [ ] I added a `github_source_url` pointing to a public, working repository or file

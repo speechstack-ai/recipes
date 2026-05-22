@@ -2,6 +2,14 @@
 
 > The open-source collection of production-ready recipes for building voice AI agents.
 
+## Scope
+
+**SpeechStack covers voice + AI templates that combine 2+ tools for a specific outcome. We do not cover general AI tools.**
+
+Every recipe in this repo must satisfy the [4-criteria template definition](./CONTRIBUTING.md#the-4-criteria-template-definition): schema-able artifact, forkable or copyable, specific named outcome, multi-component stack. PRs that don't clear the bar are closed, not merged "as drafts."
+
+---
+
 This repository powers [speechstack.com](https://speechstack.com) — a curated directory of real-world voice agent implementations across Vapi, Retell, LiveKit, Cartesia, ElevenLabs, Pipecat, Bland, and the rest of the voice AI stack.
 
 Each recipe is a single JSON file that documents a working voice agent: its use case, the full stack (telephony + STT + LLM + TTS), unit economics, latency, prompt, configuration, and a link to a public source repo or demo.
