@@ -1,0 +1,46 @@
+{
+  "id": "real-time-conversational-voice-bot-with-turn-detection",
+  "slug": "real-time-conversational-voice-bot-with-turn-detection",
+  "title": "Real-Time Conversational Voice Bot with Turn Detection",
+  "description": "A real-time conversational voice bot that listens through your microphone, transcribes speech, generates intelligent responses, and speaks back with natural turn-taking. Supports both local console mode and browser-based WebRTC sessions. Uses voice activity detection for natural interruption handling.",
+  "framework": "Pipecat",
+  "use_case": "other",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4.1",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "vad": "Silero VAD",
+    "audio_flow": "microphone → VAD → STT → Context → LLM → TTS → speaker",
+    "transport_modes": [
+      "local_console",
+      "daily_webrtc"
+    ],
+    "allow_interruptions": true
+  },
+  "github_source_url": "https://github.com/deepgram/examples/tree/main/examples/080-pipecat-voice-pipeline-python",
+  "demo_url": null,
+  "tags": [
+    "real-time",
+    "turn-detection",
+    "interruption-handling",
+    "webrtc",
+    "vad",
+    "streaming"
+  ],
+  "contributor": {
+    "github": "lukeocodes"
+  },
+  "source": "github_discovery",
+  "created_at": "2026-05-15T10:30:00-07:00",
+  "updated_at": "2026-05-15T10:30:00-07:00",
+  "license": "Proprietary"
+}
