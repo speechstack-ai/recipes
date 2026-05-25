@@ -38,7 +38,7 @@
     ]
   },
   "github_source_url": "https://github.com/daily-co/pcc-groq-llama",
-  "demo_url": null,
+  "demo_url": "https://github.com/daily-co/pcc-groq-llama",
   "tags": [
     "weather",
     "function-calling",
