@@ -1,0 +1,48 @@
+{
+  "id": "outbound-call-agent-with-voicemail-detection-and-transfer",
+  "slug": "outbound-call-agent-with-voicemail-detection-and-transfer",
+  "title": "Outbound Call Agent with Voicemail Detection and Transfer",
+  "description": "An outbound calling agent that initiates phone calls, detects voicemail, looks up availability via function calling, transfers to human operators, and detects intent to end calls. Built with LiveKit SIP and Python Agents Framework, it handles noisy environments with Krisp background voice cancellation.",
+  "framework": "LiveKit Agents",
+  "use_case": "outbound-follow-up",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "LiveKit SIP"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "function_calling": true,
+    "models_supported": [
+      "pipelined",
+      "realtime"
+    ],
+    "transfer_enabled": true,
+    "voicemail_detection": true,
+    "speech_to_speech_support": true,
+    "background_noise_cancellation": "Krisp"
+  },
+  "github_source_url": "https://github.com/livekit-examples/outbound-caller-python",
+  "demo_url": null,
+  "tags": [
+    "outbound-calling",
+    "sip",
+    "voicemail-detection",
+    "call-transfer",
+    "function-calling",
+    "noise-cancellation"
+  ],
+  "contributor": {
+    "github": "livekit-examples"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-28T10:00:00-07:00",
+  "updated_at": "2025-05-28T10:00:00-07:00",
+  "license": "MIT"
+}
