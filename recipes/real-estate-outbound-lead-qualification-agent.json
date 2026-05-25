@@ -1,0 +1,55 @@
+{
+  "id": "real-estate-outbound-lead-qualification-agent",
+  "slug": "real-estate-outbound-lead-qualification-agent",
+  "title": "Real Estate Outbound Lead Qualification Agent",
+  "description": "An AI-powered voice agent that automates outbound phone calls to real estate leads, handling live conversations to qualify prospects, capture contact details, and log results in Airtable for CRM follow-up workflows.",
+  "framework": "ElevenLabs Conversational",
+  "use_case": "lead-qualification",
+  "industry": "real-estate",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "ElevenLabs Scribe",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "airtable_fetch_lead",
+        "description": "Retrieves lead contact information from Airtable before placing the call"
+      },
+      {
+        "name": "airtable_log_result",
+        "description": "Logs captured lead details (name, email, qualification status) back to Airtable after the call"
+      },
+      {
+        "name": "makecom_webhook",
+        "description": "Triggers Make.com automation workflows for CRM updates, SMS alerts, or email follow-ups"
+      }
+    ],
+    "hosting": "Fastify backend, ngrok or Replit deployment",
+    "automation": "Make.com webhooks for post-call workflows",
+    "integration": "Airtable for lead data and CRM logging"
+  },
+  "github_source_url": "https://github.com/aloktp/Real-Estate-AI-Agent",
+  "demo_url": null,
+  "tags": [
+    "outbound-calling",
+    "lead-qualification",
+    "airtable",
+    "make-automation",
+    "real-estate"
+  ],
+  "contributor": {
+    "github": "aloktp"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-22T10:30:00Z",
+  "updated_at": "2025-05-22T10:30:00Z",
+  "license": "Proprietary"
+}
