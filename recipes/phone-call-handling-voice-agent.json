@@ -1,0 +1,42 @@
+{
+  "id": "phone-call-handling-voice-agent",
+  "slug": "phone-call-handling-voice-agent",
+  "title": "Phone Call Handling Voice Agent",
+  "description": "A voice AI agent that handles real-time phone calls with speech-to-text, AI responses, and text-to-speech streaming over WebSocket for low latency communication.",
+  "framework": "Pipecat",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o-mini",
+    "tts": "OpenAI TTS-1",
+    "telephony": "Plivo"
+  },
+  "metrics": {
+    "latency_display": "Low latency WebSocket streaming"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "streaming": true,
+    "websocket_enabled": true
+  },
+  "github_source_url": "https://github.com/plivo/python-agents-examples/tree/main/pipecat-plivo",
+  "demo_url": null,
+  "tags": [
+    "phone-calls",
+    "real-time",
+    "websocket",
+    "streaming"
+  ],
+  "contributor": {
+    "github": "plivo"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-10T00:00:00Z",
+  "updated_at": "2025-05-10T00:00:00Z",
+  "license": "MIT"
+}
