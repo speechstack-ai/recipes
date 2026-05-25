@@ -1,0 +1,79 @@
+{
+  "id": "outbound-cold-calling-agent-with-tcpa-compliance",
+  "slug": "outbound-cold-calling-agent-with-tcpa-compliance",
+  "title": "Outbound Cold Calling Agent with TCPA Compliance",
+  "description": "An outbound voice AI agent that autonomously places cold calls from a lead list, qualifies prospects, books meetings through function calls, and enforces DNC/TCPA compliance rules including automatic suppression list management and calling-window restrictions.",
+  "framework": "Custom",
+  "use_case": "sales",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": null,
+    "latency_p95_ms": null,
+    "latency_display": "~800ms target end-to-end per turn",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "book_meeting",
+        "description": "Books a meeting with a qualified prospect"
+      },
+      {
+        "name": "mark_callback",
+        "description": "Marks the lead for a callback at a later time"
+      },
+      {
+        "name": "mark_not_interested",
+        "description": "Marks the lead as not interested and removes from calling list"
+      },
+      {
+        "name": "honor_dnc",
+        "description": "Adds the contact to the Do Not Call suppression list"
+      }
+    ],
+    "encoding": "pcm_mulaw",
+    "sample_rate": 8000,
+    "ai_disclosure": "required in opener",
+    "compliance_checks": [
+      "E.164 format",
+      "suppression list",
+      "federal DNC",
+      "state DNC",
+      "TCPA calling window 8am-9pm"
+    ],
+    "machine_detection": "Enable",
+    "time_limit_seconds": 600
+  },
+  "github_source_url": "https://github.com/kelsey-aai/ai-cold-calling-agent",
+  "demo_url": null,
+  "tags": [
+    "outbound",
+    "cold-calling",
+    "compliance",
+    "tcpa",
+    "dnc",
+    "lead-qualification",
+    "meeting-booking",
+    "function-calling"
+  ],
+  "contributor": {
+    "github": "kelsey-aai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-20T10:30:00-07:00",
+  "updated_at": "2025-05-20T10:30:00-07:00",
+  "license": "Proprietary"
+}
