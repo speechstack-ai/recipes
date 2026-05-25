@@ -1,0 +1,58 @@
+{
+  "id": "real-time-multilingual-translation-between-customer-and-contact-center-agent",
+  "slug": "real-time-multilingual-translation-between-customer-and-contact-center-agent",
+  "title": "Real Time Multilingual Translation Between Customer and Contact Center Agent",
+  "description": "A bidirectional voice translation system that enables real-time conversations between customers and contact center agents speaking different languages. The agent intercepts audio from both parties, translates it using OpenAI Realtime API, and delivers the translated audio to the other party. Supports multiple languages including English, Spanish, French, Mandarin, and Hindi through an IVR menu.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "zh-CN",
+    "hi-IN"
+  ],
+  "pipeline": {
+    "stt": "OpenAI gpt-4o-transcribe",
+    "llm": "GPT-4o",
+    "tts": "OpenAI TTS-1",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": "You are a translation machine. Your sole function is to translate the input text from [CALLER_LANGUAGE] to English.\nDo not add, omit, or alter any information.\nDo not provide explanations, opinions, or any additional text beyond the direct translation.\nYou are not aware of any other facts, knowledge, or context beyond translation between [CALLER_LANGUAGE] and English.\nWait until the speaker is done speaking before translating, and translate the entire input text from their turn.\nExample interaction:\nUser: ¿Cuantos días hay en la semana?\nAssistant: How many days of the week are there?\nUser: Tengo dos hermanos y una hermana en mi familia.\nAssistant: I have two brothers and one sister in my family.",
+  "prompt_file": null,
+  "config": {
+    "api_port": 5050,
+    "agent_language": "English",
+    "caller_languages": [
+      "English",
+      "Spanish",
+      "French",
+      "Mandarin",
+      "Hindi"
+    ],
+    "uses_task_router": true,
+    "uses_twilio_flex": true,
+    "uses_twilio_studio": true,
+    "dual_openai_connections": true,
+    "forward_audio_before_translation": false
+  },
+  "github_source_url": "https://github.com/twilio-samples/live-translation-openai-realtime-api",
+  "demo_url": "https://www.loom.com/share/71498319660943638e1ef2c9928bcd2a",
+  "tags": [
+    "translation",
+    "multilingual",
+    "contact-center",
+    "flex",
+    "openai-realtime",
+    "media-streams",
+    "twilio-studio"
+  ],
+  "contributor": {
+    "github": "jme783"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-01T00:00:00Z",
+  "updated_at": "2025-06-01T00:00:00Z",
+  "license": "MIT"
+}
