@@ -1,0 +1,39 @@
+{
+  "id": "ai-sales-agent-for-b2b-product-outreach",
+  "slug": "ai-sales-agent-for-b2b-product-outreach",
+  "title": "AI Sales Agent for B2B Product Outreach",
+  "description": "An intelligent voice agent that automates B2B sales outreach by calling potential clients to pitch products. The agent evaluates client interest and routes positive responses to human sales agents, schedules follow-ups for neutral reactions, and drops uninterested leads to optimize conversion efficiency.",
+  "framework": "Bland",
+  "use_case": "sales",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "config": {
+    "call_flow": "positive leads escalate to human, neutral leads scheduled for follow-up, negative leads dropped",
+    "local_llm": "Mistral-7B GGUF (optional)",
+    "task_queue": "Celery"
+  },
+  "github_source_url": "https://github.com/zatiyab/AI-Call-Salesman",
+  "demo_url": "https://github.com/zatiyab/AI-Call-Salesman",
+  "tags": [
+    "b2b",
+    "sales-automation",
+    "lead-qualification",
+    "fastapi",
+    "celery"
+  ],
+  "contributor": {
+    "github": "zatiyab"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-24T10:30:00Z",
+  "updated_at": "2025-05-24T10:30:00Z",
+  "license": "MIT"
+}
