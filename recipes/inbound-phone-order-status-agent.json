@@ -1,0 +1,62 @@
+{
+  "id": "inbound-phone-order-status-agent",
+  "slug": "inbound-phone-order-status-agent",
+  "title": "Inbound Phone Order Status Agent",
+  "description": "A production-ready inbound phone agent that answers calls, transcribes the caller in real time, looks up order status, and offers human handoff. Built with AssemblyAI Universal-3 Pro Streaming for speech recognition, GPT-4o for conversation and function calling, and ElevenLabs for voice synthesis. Maintains 8kHz mulaw audio end-to-end with no resampling, achieving 600-1100ms turn latency.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 800,
+    "latency_p95_ms": 1100,
+    "latency_display": "600-1100ms turn latency",
+    "cost_per_minute_usd_min": 0.03,
+    "cost_per_minute_usd_max": 0.1,
+    "cost_display": "A few cents per minute at production scale"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "get_order_status",
+        "description": "Retrieves the current status of a customer order"
+      },
+      {
+        "name": "transfer_to_human",
+        "description": "Transfers the call to a human agent"
+      }
+    ],
+    "server": "FastAPI + WebSockets",
+    "stt_model": "u3-rt-pro",
+    "stt_encoding": "pcm_mulaw",
+    "stt_sample_rate": 8000,
+    "tts_output_format": "ulaw_8000"
+  },
+  "github_source_url": "https://github.com/kelsey-aai/twilio-voice-agent-assemblyai",
+  "demo_url": null,
+  "tags": [
+    "inbound",
+    "order-lookup",
+    "function-calling",
+    "mulaw",
+    "low-latency",
+    "production-ready"
+  ],
+  "contributor": {
+    "github": "kelsey-aai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-27T10:30:00-07:00",
+  "updated_at": "2025-05-27T10:30:00-07:00",
+  "license": "MIT"
+}
