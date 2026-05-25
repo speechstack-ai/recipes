@@ -40,7 +40,7 @@
     "transcript_logging": "JSONL with word-level timing, confidences, VAD state, false-interruption signals"
   },
   "github_source_url": "https://github.com/dlange-aai/hotel-booking-agent",
-  "demo_url": null,
+  "demo_url": "https://github.com/dlange-aai/hotel-booking-agent",
   "tags": [
     "telephony",
     "testing",
