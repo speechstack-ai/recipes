@@ -1,0 +1,58 @@
+{
+  "id": "restaurant-voice-ordering-with-pos-integration",
+  "slug": "restaurant-voice-ordering-with-pos-integration",
+  "title": "Restaurant Voice Ordering with POS Integration",
+  "description": "A voice AI agent that enables customers to call restaurants and place orders through natural conversation. Orders are automatically extracted from call transcripts and pushed directly into the restaurant's Clover POS system through OAuth integration, eliminating manual order entry and reducing errors during peak hours.",
+  "framework": "Retell",
+  "use_case": "order-taking",
+  "industry": "restaurant",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "extract_order_variables",
+        "description": "Extracts structured order data including customer name, phone number, order items, quantities, special requests, total amount, and payment method from the call transcript"
+      },
+      {
+        "name": "validate_menu_items",
+        "description": "Validates ordered items against the restaurant's current inventory in Clover POS"
+      },
+      {
+        "name": "create_clover_order",
+        "description": "Creates a new order in the Clover POS system with all extracted details"
+      }
+    ],
+    "oauth_flow": "Clover OAuth 2.0 with CSRF protection",
+    "token_refresh": "automatic",
+    "webhook_enabled": true,
+    "real_time_processing": true
+  },
+  "github_source_url": "https://github.com/zain1320/retellserver",
+  "demo_url": null,
+  "tags": [
+    "restaurant",
+    "pos-integration",
+    "clover",
+    "order-automation",
+    "oauth",
+    "webhook",
+    "middleware"
+  ],
+  "contributor": {
+    "github": "zain1320"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-15T10:30:00-07:00",
+  "updated_at": "2025-06-15T10:30:00-07:00",
+  "license": "Proprietary"
+}
