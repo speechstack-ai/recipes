@@ -1,0 +1,38 @@
+{
+  "id": "autonomous-sales-outbound-calling-agent",
+  "slug": "autonomous-sales-outbound-calling-agent",
+  "title": "Autonomous Sales Outbound Calling Agent",
+  "description": "An AI-powered sales agent that manages outbound calling campaigns, performs sentiment analysis on conversations, and schedules intelligent follow-ups based on real-time call analysis. The system automates cold calling workflows with conversation enrichment and adaptive scheduling.",
+  "framework": "Bland",
+  "use_case": "sales",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "PlayHT 2.0",
+    "telephony": "Twilio Voice"
+  },
+  "config": {
+    "sentiment_analysis": true,
+    "follow_up_scheduling": true,
+    "conversation_enrichment": true
+  },
+  "github_source_url": "https://github.com/yashh2417/cold_campaign_agent",
+  "demo_url": "https://github.com/yashh2417/cold_campaign_agent",
+  "tags": [
+    "sentiment-analysis",
+    "autonomous-agent",
+    "campaign-management",
+    "follow-up-automation"
+  ],
+  "contributor": {
+    "github": "yashh2417"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-07T10:30:00-05:00",
+  "updated_at": "2025-06-07T10:30:00-05:00",
+  "license": "MIT"
+}
