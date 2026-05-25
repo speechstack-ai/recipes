@@ -1,0 +1,56 @@
+{
+  "id": "smart-city-voice-ai-demo-for-harbour-city-operations",
+  "slug": "smart-city-voice-ai-demo-for-harbour-city-operations",
+  "title": "Smart City Voice AI Demo for Harbour City Operations",
+  "description": "A voice AI agent for a fictional smart city (Harbour City) featuring hot-word activation ('Hey Eve') and 16 mock functions across 4 interactive scenarios: Command & Control (power grid), Frictionless Resident (pod/coffee/HVAC), Smart Work (revenue/projections/decks), and Proactive Guardian (flood gates/alerts). Includes dynamic dashboard updates driven by LLM function calls, conversation persistence, audio interruption handling, and a futuristic minimalist UI.",
+  "framework": "Custom",
+  "use_case": "other",
+  "industry": "government",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "voice_id": "aura-2-pandora-en",
+    "hot_word": "Hey Eve",
+    "functions": 16,
+    "scenarios": [
+      "Command & Control",
+      "Frictionless Resident",
+      "Smart Work",
+      "Proactive Guardian"
+    ],
+    "technologies": [
+      "flask",
+      "deepgram-sdk",
+      "openai-gpt",
+      "websockets",
+      "python",
+      "docker",
+      "fly.io"
+    ]
+  },
+  "github_source_url": "https://github.com/deepgram-devs/smart-city",
+  "demo_url": null,
+  "tags": [
+    "smart-city",
+    "hot-word-activation",
+    "dashboard",
+    "function-calling",
+    "flask"
+  ],
+  "contributor": {
+    "github": "deepgram-devs"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-01-20T12:00:00Z",
+  "updated_at": "2025-01-20T12:00:00Z",
+  "license": "Proprietary"
+}
