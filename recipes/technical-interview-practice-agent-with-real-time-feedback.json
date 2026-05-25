@@ -1,0 +1,66 @@
+{
+  "id": "technical-interview-practice-agent-with-real-time-feedback",
+  "slug": "technical-interview-practice-agent-with-real-time-feedback",
+  "title": "Technical Interview Practice Agent with Real-Time Feedback",
+  "description": "An AI interviewer that conducts technical job interviews with real-time parallel analysis by three specialized evaluation agents. The system provides structured feedback on technical expertise, communication skills, and logical reasoning, helping candidates practice and improve their interview performance through voice-based interactions.",
+  "framework": "Cartesia",
+  "use_case": "interview-practice",
+  "industry": "education",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Cartesia STT",
+    "llm": "Cerebras Llama 3.3 70B",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "start_interview",
+        "description": "Initiates the interview session after user confirms readiness"
+      },
+      {
+        "name": "end_call",
+        "description": "Terminates the interview session"
+      }
+    ],
+    "architecture": "multi-agent",
+    "response_format": "structured_output",
+    "main_agent_model": "cerebras/llama3.3-70b",
+    "background_judges": [
+      {
+        "name": "technical_report",
+        "description": "Evaluates technical expertise"
+      },
+      {
+        "name": "communication_report",
+        "description": "Evaluates communication skills"
+      },
+      {
+        "name": "reasoning_report",
+        "description": "Evaluates logical thinking"
+      }
+    ],
+    "judge_agent_model": "cerebras/llama3.1-8b"
+  },
+  "github_source_url": "https://github.com/cartesia-ai/line/tree/main/example_integrations/cerebras",
+  "demo_url": "https://github.com/cartesia-ai/line/tree/main/example_integrations/cerebras",
+  "tags": [
+    "multi-agent",
+    "interview-prep",
+    "structured-feedback",
+    "background-analysis",
+    "technical-interview"
+  ],
+  "contributor": {
+    "github": "lucyliulee"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-23T10:30:00-07:00",
+  "updated_at": "2025-05-23T10:30:00-07:00",
+  "license": "MIT"
+}
