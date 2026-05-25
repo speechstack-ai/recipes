@@ -1,0 +1,50 @@
+{
+  "id": "pstn-voice-assistant-with-real-time-transcription-and-barge-in",
+  "slug": "pstn-voice-assistant-with-real-time-transcription-and-barge-in",
+  "title": "PSTN Voice Assistant with Real-Time Transcription and Barge-In",
+  "description": "A voice assistant that handles inbound and outbound PSTN calls with real-time transcription, supporting barge-in for natural conversation flow. Connects telephony channels to AI voice agents with low-latency streaming and multi-channel support.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "telecom",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Vonage"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "barge_in": true,
+    "deployment_options": [
+      "local",
+      "cloud_runtime"
+    ],
+    "supported_channels": [
+      "PSTN",
+      "SIP",
+      "WebRTC",
+      "WebSocket"
+    ],
+    "real_time_transcription": true
+  },
+  "github_source_url": "https://github.com/tchancse/vonage-deepgram-voice-agent",
+  "demo_url": null,
+  "tags": [
+    "barge-in",
+    "real-time-transcription",
+    "multi-channel",
+    "pstn",
+    "websocket"
+  ],
+  "contributor": {
+    "github": "tchancse"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-10T12:00:00-05:00",
+  "updated_at": "2025-06-10T12:00:00-05:00",
+  "license": "Proprietary"
+}
