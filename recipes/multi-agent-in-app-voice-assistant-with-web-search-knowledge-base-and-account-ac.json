@@ -1,0 +1,68 @@
+{
+  "id": "multi-agent-in-app-voice-assistant-with-web-search-knowledge-base-and-account-ac",
+  "slug": "multi-agent-in-app-voice-assistant-with-web-search-knowledge-base-and-account-ac",
+  "title": "Multi-Agent In-App Voice Assistant with Web Search, Knowledge Base, and Account Actions",
+  "description": "A modular voice assistant built with OpenAI Agents SDK that routes user queries to specialized agents for web search, product knowledge retrieval, or account management. Demonstrates orchestrating multiple agents with the Responses API, FileSearchTool, WebSearchTool, and custom function calling, plus voice optimization with TTS model instructions.",
+  "framework": "Custom",
+  "use_case": "triage",
+  "industry": "ecommerce",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "OpenAI Whisper",
+    "llm": "GPT-4o",
+    "tts": "OpenAI gpt-4o-mini-tts",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": "You are the virtual assistant for Acme Shop. Welcome the user and ask how you can help. Based on the user's intent, route to: AccountAgent for account-related queries, KnowledgeAgent for product FAQs, SearchAgent for anything requiring real-time web search.",
+  "prompt_file": null,
+  "config": {
+    "search_agent": {
+      "tools": [
+        "WebSearchTool"
+      ]
+    },
+    "triage_agent": {
+      "handoffs": [
+        "AccountAgent",
+        "KnowledgeAgent",
+        "SearchAgent"
+      ]
+    },
+    "account_agent": {
+      "tools": [
+        "get_account_info"
+      ]
+    },
+    "voice_pipeline": {
+      "tts_instructions": "Personality: upbeat, friendly, persuasive guide. Tone: Friendly, clear, and reassuring. Pronunciation: Clear, articulate, and steady. Tempo: Speak relatively fast, include brief pauses before questions. Emotion: Warm and supportive."
+    },
+    "knowledge_agent": {
+      "tools": [
+        "FileSearchTool"
+      ],
+      "max_num_results": 3
+    }
+  },
+  "github_source_url": "https://github.com/openai/openai-cookbook/tree/main/examples/agents_sdk/app_assistant_voice_agents.ipynb",
+  "demo_url": null,
+  "tags": [
+    "multi-agent",
+    "orchestration",
+    "web-search",
+    "file-search",
+    "function-calling",
+    "triage",
+    "routing",
+    "rag",
+    "vector-store"
+  ],
+  "contributor": {
+    "github": "rupert-openai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-27T12:00:00Z",
+  "updated_at": "2025-05-27T12:00:00Z",
+  "license": "MIT"
+}
