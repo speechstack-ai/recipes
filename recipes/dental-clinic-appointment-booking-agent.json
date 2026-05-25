@@ -1,0 +1,71 @@
+{
+  "id": "dental-clinic-appointment-booking-agent",
+  "slug": "dental-clinic-appointment-booking-agent",
+  "title": "Dental Clinic Appointment Booking Agent",
+  "description": "An AI-powered appointment booking agent that streamlines scheduling for dental clinics and healthcare businesses. The agent integrates with Google Calendar and Gmail to check available time slots, confirm bookings, send draft confirmation emails, and make outbound confirmation calls. Users can book appointments, receive queue updates, and get confirmations via email or phone call.",
+  "framework": "Custom",
+  "use_case": "scheduling",
+  "industry": "dental",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "google_calendar",
+        "description": "Check available time slots and schedule appointments in Google Calendar"
+      },
+      {
+        "name": "gmail",
+        "description": "Create and save draft confirmation emails in Gmail"
+      },
+      {
+        "name": "bland_api",
+        "description": "Make outbound confirmation phone calls after booking"
+      }
+    ],
+    "model": "gemini-2.0-flash-exp",
+    "testing": [
+      "LangSmith",
+      "LLM Unit Tests"
+    ],
+    "deployment": [
+      "Vercel",
+      "LangGraph Cloud"
+    ],
+    "integrations": [
+      "Composio",
+      "Google Calendar",
+      "Gmail",
+      "Bland.com"
+    ]
+  },
+  "github_source_url": "https://github.com/mjunaidca/appointment-agent",
+  "demo_url": null,
+  "tags": [
+    "appointment-scheduler",
+    "booking-bot",
+    "healthcare",
+    "dental",
+    "langgraph",
+    "composio",
+    "google-calendar",
+    "gmail-integration",
+    "outbound-calls"
+  ],
+  "contributor": {
+    "github": "mjunaidca"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-26T10:30:00-08:00",
+  "updated_at": "2025-05-26T10:30:00-08:00",
+  "license": "Proprietary"
+}
