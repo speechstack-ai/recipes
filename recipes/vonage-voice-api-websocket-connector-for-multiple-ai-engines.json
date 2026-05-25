@@ -1,0 +1,53 @@
+{
+  "id": "vonage-voice-api-websocket-connector-for-multiple-ai-engines",
+  "slug": "vonage-voice-api-websocket-connector-for-multiple-ai-engines",
+  "title": "Vonage Voice API WebSocket Connector for Multiple AI Engines",
+  "description": "A middleware application that connects Vonage Voice API calls (PSTN, SIP, WebRTC) to various AI engines via WebSockets. Supports inbound and outbound calling scenarios and integrates with Deepgram Voice Agent, OpenAI Realtime API, ElevenLabs Agent, Hume EVI, and custom AI pipelines through connector servers.",
+  "framework": "Custom",
+  "use_case": "other",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Vonage"
+  },
+  "config": {
+    "supports_sip": true,
+    "supports_pstn": true,
+    "supports_webrtc": true,
+    "supports_inbound": true,
+    "supports_outbound": true,
+    "supported_ai_engines": [
+      "Deepgram Voice Agent",
+      "Deepgram ASR + OpenAI LLM + ElevenLabs TTS",
+      "ElevenLabs Agent",
+      "OpenAI Realtime API",
+      "Hume EVI"
+    ],
+    "connector_architecture": true
+  },
+  "github_source_url": "https://github.com/nexmo-se/voice-to-ai-engines",
+  "demo_url": null,
+  "tags": [
+    "websocket",
+    "middleware",
+    "connector",
+    "vonage",
+    "telephony",
+    "pstn",
+    "sip",
+    "webrtc",
+    "multi-engine"
+  ],
+  "contributor": {
+    "github": "tchancse"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-01-28T10:00:00-08:00",
+  "updated_at": "2025-01-28T10:00:00-08:00",
+  "license": "Proprietary"
+}
