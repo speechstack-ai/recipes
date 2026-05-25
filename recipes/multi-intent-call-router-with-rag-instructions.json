@@ -1,0 +1,58 @@
+{
+  "id": "multi-intent-call-router-with-rag-instructions",
+  "slug": "multi-intent-call-router-with-rag-instructions",
+  "title": "Multi Intent Call Router with RAG Instructions",
+  "description": "A voice assistant that identifies caller intent through conversation, then retrieves tailored instructions via RAG to handle requests like service inquiries, person transfers, and appointment scheduling. The assistant routes calls based on detected intent and executes dynamic workflows pulled from an external knowledge base.",
+  "framework": "Vapi",
+  "use_case": "lead-routing",
+  "industry": "home-services",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Flash v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": "The prompt compels Alex to greet the caller, ask how it can help, and narrow the request to one of the supported intents (supported_service_request, request_specific_person, etc.). It limits the assistant to one clarifying question at a time and enforces guardrails (no tool chatter, no filler, safety policies).",
+  "prompt_file": null,
+  "config": {
+    "barge_in": true,
+    "tools": [
+      {
+        "name": "get_instructions",
+        "description": "Tool: get_instructions",
+        "type": "function"
+      },
+      {
+        "name": "transfer_to_live_agent",
+        "description": "Tool: transfer_to_live_agent",
+        "type": "function"
+      },
+      {
+        "name": "end_call_tool",
+        "description": "Tool: end_call_tool",
+        "type": "function"
+      }
+    ],
+    "workflow": "intent_discovery -> fetch_instructions -> execute_action",
+    "assistant_name": "Alex (Customer Handler)"
+  },
+  "github_source_url": "https://github.com/VapiAI/examples/tree/main/assistants/multi_intent_handler",
+  "demo_url": null,
+  "tags": [
+    "intent-routing",
+    "rag",
+    "call-transfer",
+    "multi-intent",
+    "dynamic-workflow"
+  ],
+  "contributor": {
+    "github": "VapiAI"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-09T18:30:00+00:00",
+  "updated_at": "2025-05-09T18:30:00+00:00",
+  "license": "MIT"
+}
