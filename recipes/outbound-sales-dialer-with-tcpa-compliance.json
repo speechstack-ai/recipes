@@ -1,0 +1,72 @@
+{
+  "id": "outbound-sales-dialer-with-tcpa-compliance",
+  "slug": "outbound-sales-dialer-with-tcpa-compliance",
+  "title": "Outbound Sales Dialer with TCPA Compliance",
+  "description": "A runnable outbound cold-calling agent that dials leads from CSV, runs compliance checks for TCPA and DNC regulations, conducts sales conversations through voice AI, and books meetings via tool calls. Includes federal DNC scrubbing, time-window enforcement, two-party consent disclosure, and immediate do-not-call honoring.",
+  "framework": "Custom",
+  "use_case": "sales",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Streaming",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "cost_per_minute_usd_min": 0.08,
+    "cost_per_minute_usd_max": 0.12,
+    "cost_display": "$0.08-0.12/min ($0.12-0.18 per 90s call)"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "barge_in": true,
+    "tools": [
+      {
+        "name": "book_meeting",
+        "description": "Books a meeting with the prospect"
+      },
+      {
+        "name": "log_disposition",
+        "description": "Logs the call outcome and disposition"
+      },
+      {
+        "name": "honor_dnc",
+        "description": "Adds the number to the do-not-call list"
+      },
+      {
+        "name": "mark_callback",
+        "description": "Schedules a callback for the prospect"
+      }
+    ],
+    "compliance_gates": [
+      "federal_dnc",
+      "tcpa_time_windows",
+      "two_party_consent"
+    ],
+    "machine_detection": true,
+    "max_concurrent_calls": 5
+  },
+  "github_source_url": "https://github.com/kelsey-aai/cold-calling-voice-agent-api",
+  "demo_url": null,
+  "tags": [
+    "outbound",
+    "sales",
+    "compliance",
+    "tcpa",
+    "dnc",
+    "lead-gen",
+    "cold-calling",
+    "dialer"
+  ],
+  "contributor": {
+    "github": "kelsey-aai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-27T10:30:00-07:00",
+  "updated_at": "2025-05-27T10:30:00-07:00",
+  "license": "MIT"
+}
