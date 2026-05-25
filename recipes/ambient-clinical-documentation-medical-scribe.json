@@ -1,0 +1,74 @@
+{
+  "id": "ambient-clinical-documentation-medical-scribe",
+  "slug": "ambient-clinical-documentation-medical-scribe",
+  "title": "Ambient Clinical Documentation Medical Scribe",
+  "description": "A passive voice AI agent that listens to doctor-patient conversations in real time, transcribes speech with medical terminology boosting, and automatically generates structured SOAP notes at session end without interrupting clinical workflow.",
+  "framework": "Pipecat",
+  "use_case": "transcription-and-summary",
+  "industry": "healthcare",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "Claude Haiku 4.5",
+    "tts": "Cartesia Sonic Turbo",
+    "telephony": "Web Only"
+  },
+  "metrics": {
+    "latency_p50_ms": 300,
+    "latency_p95_ms": null,
+    "latency_display": "Sub-300ms streaming transcription",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "vad": {
+      "stop_secs": 0.8,
+      "confidence": 0.6,
+      "min_volume": 0.4
+    },
+    "mode": "passive_listening",
+    "output_format": "SOAP_notes",
+    "medical_keyterms": [
+      "hypertension",
+      "diabetes mellitus",
+      "coronary artery disease",
+      "metformin 1000mg",
+      "lisinopril 10mg",
+      "atorvastatin 20mg",
+      "chief complaint",
+      "history of present illness",
+      "review of systems",
+      "auscultation",
+      "palpation",
+      "echocardiogram",
+      "hemoglobin A1c",
+      "blood pressure",
+      "oxygen saturation"
+    ],
+    "llm_gateway_model": "claude-haiku-4-5-20251001",
+    "silence_threshold_ms": 800
+  },
+  "github_source_url": "https://github.com/sampleapp-ai/assemblyai-medical-scribe-pipecat",
+  "demo_url": null,
+  "tags": [
+    "medical-scribe",
+    "ambient-documentation",
+    "soap-notes",
+    "clinical-workflow",
+    "passive-listening",
+    "medical-terminology",
+    "real-time-transcription"
+  ],
+  "contributor": {
+    "github": "seanflyyy"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-17T10:30:00-07:00",
+  "updated_at": "2025-05-17T10:30:00-07:00",
+  "license": "Proprietary"
+}
