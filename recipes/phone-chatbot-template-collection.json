@@ -1,0 +1,50 @@
+{
+  "id": "phone-chatbot-template-collection",
+  "slug": "phone-chatbot-template-collection",
+  "title": "Phone Chatbot Template Collection",
+  "description": "A collection of reference implementations for building phone-based voice AI agents that handle incoming and outgoing calls, call transfers, and integration with telephony providers. These templates demonstrate various telephony integration patterns including dial-in, dial-out, and call transfer scenarios using WebRTC transport.",
+  "framework": "Pipecat",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Daily PSTN"
+  },
+  "config": {
+    "examples": [
+      "daily-pstn-dial-in",
+      "daily-pstn-dial-out",
+      "daily-pstn-cold-transfer",
+      "daily-pstn-warm-transfer",
+      "daily-twilio-sip-dial-in",
+      "daily-twilio-sip-dial-out"
+    ],
+    "transport": "Daily WebRTC",
+    "telephony_options": [
+      "Daily PSTN",
+      "Twilio SIP"
+    ]
+  },
+  "github_source_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/phone-chatbot",
+  "demo_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/phone-chatbot",
+  "tags": [
+    "telephony",
+    "pstn",
+    "twilio",
+    "call-transfer",
+    "reference-implementation",
+    "template-collection"
+  ],
+  "contributor": {
+    "github": "pipecat-ai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-26T10:30:00Z",
+  "updated_at": "2025-05-26T10:30:00Z",
+  "license": "MIT"
+}
