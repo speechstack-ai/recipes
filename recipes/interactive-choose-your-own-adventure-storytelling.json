@@ -1,0 +1,43 @@
+{
+  "id": "interactive-choose-your-own-adventure-storytelling",
+  "slug": "interactive-choose-your-own-adventure-storytelling",
+  "title": "Interactive Choose Your Own Adventure Storytelling",
+  "description": "A voice-driven interactive storytelling experience that guides users through a choose-your-own-adventure narrative. The agent periodically prompts users for input to shape the story direction, generates contextual images to illustrate each story page, and creates an immersive audio-visual narrative experience.",
+  "framework": "Pipecat",
+  "use_case": "other",
+  "industry": "media-and-entertainment",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "story_style": "choose-your-own-adventure",
+    "visual_elements": true,
+    "image_generation": "Google Imagen",
+    "interactive_prompts": true
+  },
+  "github_source_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/storytelling-chatbot",
+  "demo_url": "https://gemini-storybot.vercel.app/",
+  "tags": [
+    "storytelling",
+    "image-generation",
+    "interactive",
+    "entertainment",
+    "gemini",
+    "imagen"
+  ],
+  "contributor": {
+    "github": "pipecat-ai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-14T10:30:00Z",
+  "updated_at": "2025-05-14T10:30:00Z",
+  "license": "MIT"
+}
