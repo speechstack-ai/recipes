@@ -1,0 +1,44 @@
+{
+  "id": "general-assistant-voice-chatbot-with-audio-streaming",
+  "slug": "general-assistant-voice-chatbot-with-audio-streaming",
+  "title": "General Assistant Voice Chatbot with Audio Streaming",
+  "description": "A voice AI assistant that receives calls through Plivo, transcribes caller speech using Deepgram, generates contextual responses via OpenAI, and converts replies back to natural speech with ElevenLabs. Designed to handle general queries across various fields with polite, helpful conversation.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Plivo"
+  },
+  "metrics": {
+    "latency_display": "500ms buffering with voice activity detection"
+  },
+  "raw_prompt": "You are John Doe, a chatbot assistant that helps in resolving general queries related to any fields. When someone says hello, you will greet them and answer their questions in a polite way.",
+  "prompt_file": null,
+  "config": {
+    "buffering": "pause-based",
+    "audio_format": "mulaw/8000",
+    "vad_pause_threshold_ms": 500,
+    "system_message_customizable": true
+  },
+  "github_source_url": "https://github.com/plivo/plivo-audiostream-integration-guides/tree/main/voiceagent",
+  "demo_url": null,
+  "tags": [
+    "audio-streaming",
+    "voice-activity-detection",
+    "telephony-integration",
+    "proof-of-concept"
+  ],
+  "contributor": {
+    "github": "prashantp-plivo"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-24T10:30:00Z",
+  "updated_at": "2025-05-24T10:30:00Z",
+  "license": "Proprietary"
+}
