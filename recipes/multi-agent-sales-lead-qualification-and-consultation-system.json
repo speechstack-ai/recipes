@@ -1,0 +1,92 @@
+{
+  "id": "multi-agent-sales-lead-qualification-and-consultation-system",
+  "slug": "multi-agent-sales-lead-qualification-and-consultation-system",
+  "title": "Multi-Agent Sales Lead Qualification and Consultation System",
+  "description": "A reference implementation demonstrating a multi-agent voice architecture where specialized agents handle different conversation phases through seamless handoffs. Three agents—Qualifier, Advisor, and Closer—handle lead qualification, consultation, and scheduling while maintaining context through an orchestrator that manages transitions and summarizes conversation history between agents.",
+  "framework": "Custom",
+  "use_case": "lead-qualification",
+  "industry": "financial-services",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "schedule_followup",
+        "description": "Schedule a follow-up appointment with the lead",
+        "agent": "closer"
+      },
+      {
+        "name": "record_satisfaction",
+        "description": "Record the lead's satisfaction level with the consultation",
+        "agent": "closer"
+      },
+      {
+        "name": "end_conversation",
+        "description": "End the conversation gracefully",
+        "agent": "closer"
+      },
+      {
+        "name": "handoff_to_next_agent",
+        "description": "Transfer the conversation to the next specialized agent",
+        "agent": "advisor"
+      },
+      {
+        "name": "end_conversation",
+        "description": "End the conversation gracefully",
+        "agent": "advisor"
+      },
+      {
+        "name": "handoff_to_next_agent",
+        "description": "Transfer the conversation to the next specialized agent",
+        "agent": "qualifier"
+      },
+      {
+        "name": "end_conversation",
+        "description": "End the conversation gracefully",
+        "agent": "qualifier"
+      }
+    ],
+    "agents": [
+      "qualifier",
+      "advisor",
+      "closer"
+    ],
+    "greeting": "Hi, this is Alex calling from our advisory services. Is now a good time to chat briefly?",
+    "architecture": "multi-agent",
+    "orchestrator": "CallOrchestrator",
+    "context_transfer": "groq_api",
+    "audio_persistence": true,
+    "functions_per_agent": "2-4",
+    "context_summarization": "Llama 3.3 70B",
+    "session_based_switching": true
+  },
+  "github_source_url": "https://github.com/deepgram-devs/deepgram-voice-agent-multi-agent",
+  "demo_url": null,
+  "tags": [
+    "multi-agent",
+    "orchestration",
+    "lead-qualification",
+    "sales",
+    "financial-advisory",
+    "context-management",
+    "agent-handoff",
+    "outbound-calling",
+    "reference-implementation"
+  ],
+  "contributor": {
+    "github": "deepgram-devs"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-23T10:30:00-07:00",
+  "updated_at": "2025-05-23T10:30:00-07:00",
+  "license": "MIT"
+}
