@@ -1,0 +1,47 @@
+{
+  "id": "customer-support-and-appointment-booking-assistant",
+  "slug": "customer-support-and-appointment-booking-assistant",
+  "title": "Customer Support and Appointment Booking Assistant",
+  "description": "An intelligent phone assistant that handles real phone conversations for customer support inquiries and appointment scheduling. The agent uses real-time voice streaming to understand caller requests, provide helpful responses, and manage booking workflows through natural multi-turn conversations.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o-mini",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "modes": [
+      "customer_support",
+      "appointment_booking"
+    ],
+    "framework": "twilio_conversationrelay",
+    "voice_options": 8,
+    "webhook_validation": true,
+    "websocket_streaming": true
+  },
+  "github_source_url": "https://github.com/twilio-samples/conversationrelay-ai-demo",
+  "demo_url": null,
+  "tags": [
+    "twilio",
+    "conversationrelay",
+    "outbound-calling",
+    "websocket",
+    "elevenlabs",
+    "realtime-streaming"
+  ],
+  "contributor": {
+    "github": "druv5319"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-28T10:30:00-07:00",
+  "updated_at": "2025-05-28T10:30:00-07:00",
+  "license": "MIT"
+}
