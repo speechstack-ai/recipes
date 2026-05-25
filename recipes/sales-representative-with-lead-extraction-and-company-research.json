@@ -1,0 +1,54 @@
+{
+  "id": "sales-representative-with-lead-extraction-and-company-research",
+  "slug": "sales-representative-with-lead-extraction-and-company-research",
+  "title": "Sales Representative with Lead Extraction and Company Research",
+  "description": "A sales voice agent that extracts structured lead information during conversations and performs automated company research. Uses a three-agent architecture with dedicated agents for conversation handling, lead extraction, and company research via web search. Maintains stateful lead accumulation across the conversation.",
+  "framework": "Cartesia",
+  "use_case": "sales",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Cartesia STT",
+    "llm": "Claude Haiku 4.5",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "extract_leads",
+        "description": "Extracts structured lead information from conversation"
+      },
+      {
+        "name": "research_company",
+        "description": "Performs automated company research via web search"
+      }
+    ],
+    "chat_agent_model": "anthropic/claude-haiku-4-5-20251001",
+    "researcher_model": "anthropic/claude-opus-4-20250514",
+    "web_search_enabled": true,
+    "leads_extractor_model": "anthropic/claude-haiku-4-5-20251001",
+    "stateful_lead_tracking": true,
+    "company_research_caching": true
+  },
+  "github_source_url": "https://github.com/cartesia-ai/line/tree/main/examples/sales_with_leads",
+  "demo_url": null,
+  "tags": [
+    "lead-extraction",
+    "company-research",
+    "multi-agent",
+    "stateful",
+    "web-search"
+  ],
+  "contributor": {
+    "github": "cartesia-ai"
+  },
+  "source": "github_discovery",
+  "created_at": "2026-05-27T10:30:00-07:00",
+  "updated_at": "2026-05-27T10:30:00-07:00",
+  "license": "MIT"
+}
