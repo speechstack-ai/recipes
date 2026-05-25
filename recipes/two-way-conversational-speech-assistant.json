@@ -1,0 +1,46 @@
+{
+  "id": "two-way-conversational-speech-assistant",
+  "slug": "two-way-conversational-speech-assistant",
+  "title": "Two-Way Conversational Speech Assistant",
+  "description": "A voice assistant template that enables natural two-way conversations over phone calls using websocket connections to orchestrate real-time audio streaming between callers and AI. Demonstrates interrupt handling and AI preemption capabilities for smooth conversational experiences.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "OpenAI Whisper",
+    "llm": "GPT-4o",
+    "tts": "OpenAI TTS-1",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "voice_id": null,
+    "temperature": null,
+    "barge_in": true,
+    "interruption_threshold_ms": null,
+    "tools": [],
+    "ai_speaks_first": false,
+    "interrupt_handling": "input_audio_buffer.speech_started triggers Twilio Media Streams buffer clear and OpenAI conversation.item.truncate"
+  },
+  "github_source_url": "https://github.com/twilio-samples/speech-assistant-openai-realtime-api-python",
+  "demo_url": null,
+  "tags": [
+    "twilio",
+    "openai-realtime-api",
+    "media-streams",
+    "websocket",
+    "interrupt-handling",
+    "python"
+  ],
+  "contributor": {
+    "github": "pkamp3"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-07T12:00:00Z",
+  "updated_at": "2025-06-07T12:00:00Z",
+  "license": "MIT"
+}
