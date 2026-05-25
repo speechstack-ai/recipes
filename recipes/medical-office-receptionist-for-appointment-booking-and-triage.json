@@ -52,7 +52,7 @@
     "per_client_config": "YAML files in config/ directory"
   },
   "github_source_url": "https://github.com/RaheesAhmed/MediVoice-AI",
-  "demo_url": null,
+  "demo_url": "https://github.com/RaheesAhmed/MediVoice-AI",
   "tags": [
     "healthcare",
     "appointment-booking",
