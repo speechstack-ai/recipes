@@ -1,0 +1,58 @@
+{
+  "id": "multi-agent-voice-pipeline-with-transcription-and-synthesis",
+  "slug": "multi-agent-voice-pipeline-with-transcription-and-synthesis",
+  "title": "Multi-Agent Voice Pipeline with Transcription and Synthesis",
+  "description": "A three-agent crew that processes spoken audio end-to-end: one agent transcribes speech, a research analyst extracts key insights, and a speaker agent delivers the analysis as spoken audio. Demonstrates sequential multi-agent coordination with voice input and output.",
+  "framework": "Custom",
+  "use_case": "transcription-and-summary",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "agents": [
+      {
+        "goal": "Transcribe audio using Deepgram STT",
+        "role": "Voice Listener",
+        "tool": "transcribe_audio"
+      },
+      {
+        "goal": "Extract key insights from transcript",
+        "role": "Research Analyst",
+        "backend": "GPT-4.1-mini"
+      },
+      {
+        "goal": "Synthesize summary into spoken audio",
+        "role": "Voice Speaker",
+        "tool": "speak_text"
+      }
+    ],
+    "process": "sequential",
+    "stt_model": "nova-3",
+    "tts_model": "aura-2-asteria-en",
+    "smart_format": true
+  },
+  "github_source_url": "https://github.com/deepgram/examples/tree/main/examples/310-crewai-voice-agents-python",
+  "demo_url": null,
+  "tags": [
+    "crewai",
+    "multi-agent",
+    "sequential-processing",
+    "voice-to-voice"
+  ],
+  "contributor": {
+    "github": "lukeocodes"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-27T10:30:00+00:00",
+  "updated_at": "2025-05-27T10:30:00+00:00",
+  "license": "MIT"
+}
