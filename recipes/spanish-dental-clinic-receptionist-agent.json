@@ -1,0 +1,92 @@
+{
+  "id": "spanish-dental-clinic-receptionist-agent",
+  "slug": "spanish-dental-clinic-receptionist-agent",
+  "title": "Spanish Dental Clinic Receptionist Agent",
+  "description": "A Spanish-first AI receptionist that handles appointment scheduling, service inquiries, and patient onboarding for dental clinics and healthcare SMBs in Latin America. Provides 24/7 phone coverage with low-latency Mexican Spanish voice, integrates with clinic knowledge bases, and offers appointment booking with WhatsApp confirmations.",
+  "framework": "Pipecat",
+  "use_case": "scheduling",
+  "industry": "dental",
+  "languages": [
+    "es-MX",
+    "es"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Claude Sonnet 4.5",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 900,
+    "latency_p95_ms": 1200,
+    "latency_display": "900-1200 ms TTFA",
+    "cost_per_minute_usd_min": 0.044,
+    "cost_per_minute_usd_max": 0.044,
+    "cost_display": "$0.044/min (~$0.11 per 2.5 min call)"
+  },
+  "raw_prompt": "You are Rocío, the virtual receptionist for this clinic. Your job is to help patients schedule appointments, answer questions about services and pricing, and provide general clinic information. Never diagnose medical conditions or quote prices that aren't in your knowledge base. Always confirm appointments orally and mention that the patient will receive a WhatsApp confirmation. Clinic hours are Monday through Saturday, 9 AM to 7 PM.",
+  "prompt_file": null,
+  "config": {
+    "voice_id": "mx-female-warm-v1",
+    "tools": [
+      {
+        "name": "search_clinic_info",
+        "description": "Retrieves services, pricing, hours, and FAQs from the tenant's knowledge base (Qdrant collection kb_{tenant_id})",
+        "parameters": {
+          "query": "string"
+        }
+      },
+      {
+        "name": "find_available_slot",
+        "description": "Returns bookable calendar slots for a given service",
+        "parameters": {
+          "from_date": "string (optional)",
+          "service_id": "string (required)",
+          "preferred_time": "enum: morning, afternoon, any (optional)"
+        }
+      },
+      {
+        "name": "book_appointment",
+        "description": "Confirms an appointment and sends WhatsApp notification",
+        "parameters": {
+          "slot_id": "string (required)",
+          "patient_name": "string (required)",
+          "patient_phone": "string (required)"
+        }
+      },
+      {
+        "name": "transfer_to_human",
+        "description": "Transfers the call to a human receptionist",
+        "parameters": {
+          "reason": "string (optional)"
+        }
+      }
+    ],
+    "vad": "Silero",
+    "language": "es",
+    "serializer": "twilio",
+    "audio_format": "μ-law 8 kHz",
+    "observability": "Langfuse",
+    "tenant_scoped": true,
+    "rag_integration": "Qdrant"
+  },
+  "github_source_url": "https://github.com/numoru-ia/voice-agent-es",
+  "demo_url": "https://github.com/numoru-ia/voice-agent-es",
+  "tags": [
+    "spanish",
+    "healthcare",
+    "dental",
+    "appointment-booking",
+    "multi-tenant",
+    "rag",
+    "twilio",
+    "latin-america"
+  ],
+  "contributor": {
+    "github": "gbrayhan"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-23T10:30:00-05:00",
+  "updated_at": "2025-05-23T10:30:00-05:00",
+  "license": "Apache-2.0"
+}
