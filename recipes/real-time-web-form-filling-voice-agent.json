@@ -1,0 +1,56 @@
+{
+  "id": "real-time-web-form-filling-voice-agent",
+  "slug": "real-time-web-form-filling-voice-agent",
+  "title": "Real-Time Web Form Filling Voice Agent",
+  "description": "A voice agent that conducts phone questionnaires while automatically filling out web forms in real-time using browser automation. The agent collects answers through natural conversation and asynchronously fills form fields in the background, maintaining smooth conversation flow without blocking.",
+  "framework": "Cartesia",
+  "use_case": "survey",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Cartesia STT",
+    "llm": "Gemini 2.5 Pro",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": "Hello! I'm here to help you fill out an application form today...",
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "start_questionnaire",
+        "description": "Starts the questionnaire flow and asks the first question. This is a passthrough tool that directly emits AgentSendText events for deterministic conversation flow."
+      },
+      {
+        "name": "record_form_field",
+        "description": "Records an answer and fills the corresponding form field in the browser. Asynchronously fills the form in the background while immediately asking the next question. This is a passthrough tool for predictable conversation flow."
+      }
+    ],
+    "form_url": "configurable",
+    "model_id": "gemini-pro",
+    "auto_submission": true,
+    "async_form_filling": true,
+    "browser_automation": "Stagehand + Browserbase",
+    "eager_browser_initialization": true
+  },
+  "github_source_url": "https://github.com/cartesia-ai/line/tree/main/example_integrations/browserbase",
+  "demo_url": "https://github.com/cartesia-ai/line/tree/main/example_integrations/browserbase",
+  "tags": [
+    "form-filling",
+    "browser-automation",
+    "stagehand",
+    "browserbase",
+    "questionnaire",
+    "async-processing",
+    "passthrough-tools"
+  ],
+  "contributor": {
+    "github": "lucyliulee"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-23T18:30:00-07:00",
+  "updated_at": "2025-05-23T18:30:00-07:00",
+  "license": "MIT"
+}
