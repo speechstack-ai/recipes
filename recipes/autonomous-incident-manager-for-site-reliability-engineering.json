@@ -1,0 +1,70 @@
+{
+  "id": "autonomous-incident-manager-for-site-reliability-engineering",
+  "slug": "autonomous-incident-manager-for-site-reliability-engineering",
+  "title": "Autonomous Incident Manager for Site Reliability Engineering",
+  "description": "An autonomous agent that detects production errors in real time, investigates root causes using AI, generates code patches, and calls on-call engineers via voice to request approval for deployment. Compresses traditional incident response from hours to under 30 seconds.",
+  "framework": "Custom",
+  "use_case": "technical-support",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "ElevenLabs Flash v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 3000,
+    "latency_p95_ms": 15000,
+    "latency_display": "3s detection, 15s analysis",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "analyze_error",
+        "description": "Accepts error payload and begins async AI analysis with Gemini"
+      },
+      {
+        "name": "generate_patch",
+        "description": "Generates git-style code patch based on root cause analysis"
+      },
+      {
+        "name": "voice_notification",
+        "description": "Initiates voice call to on-call engineer via Bland AI with incident summary"
+      },
+      {
+        "name": "deploy_approval",
+        "description": "Tracks engineer approval state for automated deployment"
+      }
+    ],
+    "auth": "Auth0",
+    "observability": "Overmind tracer",
+    "incident_store": "Aerospike",
+    "llm_temperature": null,
+    "polling_interval_ms": 3000
+  },
+  "github_source_url": "https://github.com/Badri-Narayanan/Autonomous-SRE",
+  "demo_url": null,
+  "tags": [
+    "incident-management",
+    "self-healing",
+    "devops",
+    "autonomous-agent",
+    "code-generation",
+    "real-time-monitoring"
+  ],
+  "contributor": {
+    "github": "Badri-Narayanan"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-08T19:30:00Z",
+  "updated_at": "2025-06-08T19:30:00Z",
+  "license": "Proprietary"
+}
