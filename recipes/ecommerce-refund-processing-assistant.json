@@ -1,0 +1,69 @@
+{
+  "id": "ecommerce-refund-processing-assistant",
+  "slug": "ecommerce-refund-processing-assistant",
+  "title": "Ecommerce Refund Processing Assistant",
+  "description": "A voice agent that handles customer refund requests for ecommerce orders. The agent verifies order details, identifies missing items, and processes refunds through an agentic system with human-in-the-loop capabilities for approval workflows.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "ecommerce",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_display": "Ultra low latency via Twilio Conversation Relay"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "barge_in": true,
+    "tools": [
+      {
+        "name": "refund_processor",
+        "description": "Tool: refund_processor"
+      },
+      {
+        "name": "order_lookup",
+        "description": "Tool: order_lookup"
+      },
+      {
+        "name": "agent_consultation",
+        "description": "Tool: agent_consultation"
+      },
+      {
+        "name": "transfer_to_agent",
+        "description": "Tool: transfer_to_agent"
+      }
+    ],
+    "governance_bot": true,
+    "flex_integration": true,
+    "conversation_sync": true,
+    "human_in_the_loop": true,
+    "voice_intelligence": true,
+    "interruption_handling": "natural"
+  },
+  "github_source_url": "https://github.com/pBread/twilio-agentic-voice-assistant",
+  "demo_url": null,
+  "tags": [
+    "refunds",
+    "ecommerce",
+    "customer-support",
+    "human-in-the-loop",
+    "flex-integration",
+    "voice-intelligence",
+    "agentic-system",
+    "conversation-relay"
+  ],
+  "contributor": {
+    "github": "pBread"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-08T00:00:00Z",
+  "updated_at": "2025-06-08T00:00:00Z",
+  "license": "Proprietary"
+}
