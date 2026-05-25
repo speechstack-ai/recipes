@@ -1,0 +1,79 @@
+{
+  "id": "coffee-shop-voice-ordering-system",
+  "slug": "coffee-shop-voice-ordering-system",
+  "title": "Coffee Shop Voice Ordering System",
+  "description": "A production-ready voice ordering system for coffee shops that allows customers to call and place drink orders through natural conversation. Features real-time speech recognition, AI-powered conversation handling, SMS notifications for order confirmations and pickup alerts, and live order dashboards for staff and customers.",
+  "framework": "Custom",
+  "use_case": "order-taking",
+  "industry": "restaurant",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": null,
+    "latency_p95_ms": null,
+    "latency_display": null,
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": "Hey! Welcome to Deepgram Drinks. What can I get started for you?",
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "add_to_cart",
+        "description": "Adds items to the customer's order cart"
+      },
+      {
+        "name": "confirm_order",
+        "description": "Confirms and finalizes the customer's order"
+      },
+      {
+        "name": "send_sms",
+        "description": "Sends SMS notifications for order confirmation and pickup alerts"
+      },
+      {
+        "name": "order_status_update",
+        "description": "Updates order status in real-time dashboard"
+      }
+    ],
+    "features": [
+      "natural_conversation",
+      "order_confirmation",
+      "sms_notifications",
+      "real_time_dashboard",
+      "order_tracking"
+    ],
+    "language": "en",
+    "llm_model": "gemini-2.5-flash",
+    "stt_model": "flux-general-en",
+    "tts_model": "aura-2-odysseus-en",
+    "menu_config": "configurable via menu_config.json",
+    "audio_pipeline": "u-law 8kHz to Linear16 48kHz conversion"
+  },
+  "github_source_url": "https://github.com/deepgram/flux-twilio-voice-assistant",
+  "demo_url": null,
+  "tags": [
+    "voice-ordering",
+    "restaurant-automation",
+    "sms-notifications",
+    "real-time-dashboard",
+    "fastapi",
+    "production-ready",
+    "containerized"
+  ],
+  "contributor": {
+    "github": "jeniya-tabassum"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-12T00:00:00Z",
+  "updated_at": "2025-05-12T00:00:00Z",
+  "license": "Proprietary"
+}
