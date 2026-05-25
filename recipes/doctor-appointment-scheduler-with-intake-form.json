@@ -45,7 +45,7 @@
     "background_tools_enabled": true
   },
   "github_source_url": "https://github.com/cartesia-ai/line/tree/main/examples/form_filler",
-  "demo_url": null,
+  "demo_url": "https://github.com/cartesia-ai/line/tree/main/examples/form_filler",
   "tags": [
     "intake-form",
     "appointment-booking",
