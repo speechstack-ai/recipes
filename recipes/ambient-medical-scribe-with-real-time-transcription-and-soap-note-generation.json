@@ -1,0 +1,47 @@
+{
+  "id": "ambient-medical-scribe-with-real-time-transcription-and-soap-note-generation",
+  "slug": "ambient-medical-scribe-with-real-time-transcription-and-soap-note-generation",
+  "title": "Ambient Medical Scribe with Real-Time Transcription and SOAP Note Generation",
+  "description": "A listen-only agent that passively transcribes clinical encounters in real time and generates SOAP notes on demand. The agent operates silently without voice interaction, capturing doctor-patient conversations through conservative turn detection and medical keyword recognition, then producing structured clinical documentation.",
+  "framework": "LiveKit Agents",
+  "use_case": "transcription-and-summary",
+  "industry": "healthcare",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "Claude Opus 4.5",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "mode": "listen_only",
+    "turn_detection": {
+      "max_silence_ms": 3600,
+      "min_silence_ms": 800
+    },
+    "soap_generation": "on_demand",
+    "medical_keyterms": true,
+    "silent_operation": true
+  },
+  "github_source_url": "https://github.com/sampleapp-ai/assemblyai-medical-scribe-livekit",
+  "demo_url": null,
+  "tags": [
+    "medical-scribe",
+    "ambient-listening",
+    "soap-notes",
+    "clinical-documentation",
+    "passive-agent",
+    "real-time-transcription"
+  ],
+  "contributor": {
+    "github": "seanflyyy"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-13T12:00:00Z",
+  "updated_at": "2025-05-13T12:00:00Z",
+  "license": "Proprietary"
+}
