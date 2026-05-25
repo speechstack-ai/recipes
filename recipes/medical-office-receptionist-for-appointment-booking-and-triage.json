@@ -1,0 +1,71 @@
+{
+  "id": "medical-office-receptionist-for-appointment-booking-and-triage",
+  "slug": "medical-office-receptionist-for-appointment-booking-and-triage",
+  "title": "Medical Office Receptionist for Appointment Booking and Triage",
+  "description": "A real-time voice AI receptionist for medical practices that handles inbound patient calls, books appointments, processes prescription refill requests, takes messages for callbacks, and routes urgent queries to human staff. Uses LangGraph for intelligent conversation orchestration and multi-turn appointment booking workflows.",
+  "framework": "Pipecat",
+  "use_case": "scheduling",
+  "industry": "healthcare",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "Claude Haiku 4.5",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 200,
+    "latency_p95_ms": null,
+    "latency_display": "~200ms STT, ~80ms TTS",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "check_appointment_availability",
+        "description": "Tool: check_appointment_availability"
+      },
+      {
+        "name": "book_appointment",
+        "description": "Tool: book_appointment"
+      },
+      {
+        "name": "request_prescription_refill",
+        "description": "Tool: request_prescription_refill"
+      },
+      {
+        "name": "take_message",
+        "description": "Tool: take_message"
+      },
+      {
+        "name": "transfer_to_human",
+        "description": "Tool: transfer_to_human"
+      }
+    ],
+    "orchestration": "LangGraph agent for multi-turn workflows",
+    "per_client_config": "YAML files in config/ directory"
+  },
+  "github_source_url": "https://github.com/RaheesAhmed/MediVoice-AI",
+  "demo_url": null,
+  "tags": [
+    "healthcare",
+    "appointment-booking",
+    "prescription-refills",
+    "medical-triage",
+    "langgraph",
+    "multi-client"
+  ],
+  "contributor": {
+    "github": "RaheesAhmed"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-14T12:00:00Z",
+  "updated_at": "2025-05-14T12:00:00Z",
+  "license": "MIT"
+}
