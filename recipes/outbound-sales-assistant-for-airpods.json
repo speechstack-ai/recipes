@@ -1,0 +1,61 @@
+{
+  "id": "outbound-sales-assistant-for-airpods",
+  "slug": "outbound-sales-assistant-for-airpods",
+  "title": "Outbound Sales Assistant for AirPods",
+  "description": "Voice AI agent that conducts outbound sales calls for Apple AirPods, helping customers choose between models by asking qualifying questions about preferences for in-ear vs over-ear and noise canceling features. The agent maintains conversation history, handles interruptions, and can check inventory and place orders through function calls.",
+  "framework": "Custom",
+  "use_case": "sales",
+  "industry": "retail",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Twilio Voice"
+  },
+  "metrics": {
+    "latency_p50_ms": 1000,
+    "latency_p95_ms": null,
+    "latency_display": "~1 second typical response time",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": "You are an outbound sales representative selling Apple Airpods. You have a youthful and cheery personality. Keep your responses as brief as possible but make every attempt to keep the caller on the phone without being rude. Don't ask more than 1 question at a time. Don't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous. Speak out all prices to include the currency. Please help them decide between the airpods, airpods pro and airpods max by asking questions like 'Do you prefer headphones that go in your ear or over the ear?'. If they are trying to choose between the airpods and airpods pro try asking them if they need noise canceling. Once you know which model they would like ask them how many they would like to purchase and try to get them to place an order. Add a '•' symbol every 5 to 10 words at natural pauses where your response can be split for text to speech.",
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "checkInventory",
+        "description": "Check inventory for AirPods models"
+      },
+      {
+        "name": "placeOrder",
+        "description": "Place an order for selected AirPods model"
+      }
+    ],
+    "streaming": true,
+    "initial_message": "Hello! I understand you're looking for a pair of AirPods, is that correct?",
+    "response_chunking": "Uses '•' symbol for natural pauses",
+    "conversation_history": true,
+    "interruption_handling": true
+  },
+  "github_source_url": "https://github.com/twilio-labs/call-gpt",
+  "demo_url": null,
+  "tags": [
+    "streaming",
+    "function-calling",
+    "interruption-handling",
+    "conversation-memory",
+    "outbound-calling"
+  ],
+  "contributor": {
+    "github": "cweems"
+  },
+  "source": "github_discovery",
+  "created_at": "2026-05-25T19:44:54-07:00",
+  "updated_at": "2026-05-25T19:44:54-07:00",
+  "license": "MIT"
+}
