@@ -1,0 +1,63 @@
+{
+  "id": "doctor-appointment-scheduler-with-intake-form",
+  "slug": "doctor-appointment-scheduler-with-intake-form",
+  "title": "Doctor Appointment Scheduler with Intake Form",
+  "description": "A voice agent that guides patients through scheduling doctor appointments by collecting intake information (name, date of birth, reason for visit, contact details) and booking available appointment slots. The agent asks one question at a time, confirms answers, supports editing previous responses, and gracefully handles the entire scheduling workflow.",
+  "framework": "Cartesia",
+  "use_case": "scheduling",
+  "industry": "healthcare",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Cartesia STT",
+    "llm": "Gemini 2.5 Flash",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "record_answer",
+        "description": "Tool: record_answer"
+      },
+      {
+        "name": "list_answer",
+        "description": "Tool: list_answer"
+      },
+      {
+        "name": "check_availability",
+        "description": "Tool: check_availability"
+      },
+      {
+        "name": "select_appointment_slot",
+        "description": "Tool: select_appointment_slot"
+      },
+      {
+        "name": "book_appointment_and_submit_form",
+        "description": "Tool: book_appointment_and_submit_form"
+      }
+    ],
+    "per_call_state": true,
+    "loopback_tools_enabled": true,
+    "background_tools_enabled": true
+  },
+  "github_source_url": "https://github.com/cartesia-ai/line/tree/main/examples/form_filler",
+  "demo_url": null,
+  "tags": [
+    "intake-form",
+    "appointment-booking",
+    "medical-scheduling",
+    "form-filling",
+    "patient-intake"
+  ],
+  "contributor": {
+    "github": "dakshdua"
+  },
+  "source": "github_discovery",
+  "created_at": "2026-05-26T10:30:00-08:00",
+  "updated_at": "2026-05-26T10:30:00-08:00",
+  "license": "MIT"
+}
