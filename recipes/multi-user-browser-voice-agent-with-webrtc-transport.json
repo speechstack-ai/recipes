@@ -1,0 +1,55 @@
+{
+  "id": "multi-user-browser-voice-agent-with-webrtc-transport",
+  "slug": "multi-user-browser-voice-agent-with-webrtc-transport",
+  "title": "Multi-User Browser Voice Agent with WebRTC Transport",
+  "description": "A Python worker that bridges LiveKit WebRTC rooms with AssemblyAI's Voice Agent API, enabling multi-user voice conversations with an AI agent in browser, mobile, and desktop clients. The worker handles audio transport while AssemblyAI manages the full AI pipeline including speech-to-text, LLM responses, and text-to-speech with neural turn detection and barge-in support.",
+  "framework": "Custom",
+  "use_case": "support",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": "You are a customer support agent for Acme. Speak in 1–2 short sentences. Confirm the user's question before answering.",
+  "prompt_file": null,
+  "config": {
+    "voice_id": "james",
+    "barge_in": true,
+    "sample_rate": 24000,
+    "audio_format": "audio/pcm",
+    "num_channels": 1,
+    "tool_calling": true,
+    "queue_size_ms": 1000,
+    "turn_detection": {
+      "max_silence": 1500,
+      "min_silence": 600,
+      "vad_threshold": 0.5,
+      "interrupt_response": true
+    }
+  },
+  "github_source_url": "https://github.com/kelsey-aai/voice-agent-livekit",
+  "demo_url": "https://agents-playground.livekit.io",
+  "tags": [
+    "webrtc",
+    "livekit",
+    "assemblyai",
+    "multi-user",
+    "browser",
+    "mobile",
+    "neural-turn-detection",
+    "barge-in",
+    "tool-calling"
+  ],
+  "contributor": {
+    "github": "kelsey-aai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-10T12:00:00-08:00",
+  "updated_at": "2025-06-10T12:00:00-08:00",
+  "license": "Proprietary"
+}
