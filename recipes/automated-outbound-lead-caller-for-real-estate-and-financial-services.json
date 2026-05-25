@@ -1,0 +1,74 @@
+{
+  "id": "automated-outbound-lead-caller-for-real-estate-and-financial-services",
+  "slug": "automated-outbound-lead-caller-for-real-estate-and-financial-services",
+  "title": "Automated Outbound Lead Caller for Real Estate and Financial Services",
+  "description": "An AI voice agent that automatically calls leads from Airtable on a schedule, conducts natural conversations to qualify prospects, and sends appointment booking links via email and WhatsApp. The agent validates phone numbers, tracks call status, and integrates with Calendly for seamless appointment scheduling across real estate, financial services, insurance, and sales teams.",
+  "framework": "Vapi",
+  "use_case": "outbound-follow-up",
+  "industry": "real-estate",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": "You are a professional real estate/financial advisor calling to qualify leads and book appointments. Prospect Information: Name: {{prospect_name}}, Company: {{company_name}}, Industry: {{industry}}, Title: {{prospect_title}}. Your goals: 1. Introduce yourself warmly 2. Reference their company and industry 3. Explain your service briefly 4. Gauge interest 5. Offer to send a Calendly booking link 6. If they want to book, call the book_appointment function. Be conversational, professional, and respectful of their time. If they're not interested, thank them and end the call politely.",
+  "prompt_file": null,
+  "config": {
+    "voice_id": "not specified",
+    "tools": [
+      {
+        "name": "book_appointment",
+        "description": "Books an appointment by sending Calendly link via email and WhatsApp",
+        "parameters": {
+          "type": "object",
+          "required": [
+            "preferred_timeslot"
+          ],
+          "properties": {
+            "preferred_timeslot": {
+              "type": "string",
+              "description": "The date/time prospect wants to meet (ISO format)"
+            }
+          }
+        }
+      }
+    ],
+    "schedule": "Every 4 minutes, 11 AM - 4 PM (America/Chicago)",
+    "first_message": "Hi {{prospect_name}}! This is Sarah from [Your Company]. I'm calling about [your service]. Do you have a quick minute to chat?",
+    "status_updates": [
+      "To Do",
+      "Done",
+      "Number not Found"
+    ],
+    "airtable_filter": "{Call}='To Do'",
+    "cron_expression": "*/4 11-16 * * *",
+    "multi_channel_follow_up": {
+      "email": true,
+      "whatsapp": true,
+      "calendly_link": true
+    },
+    "lead_limit_per_execution": 1
+  },
+  "github_source_url": "https://github.com/Awaisali36/Outbound-Real-State-Voice-AI-Agent-",
+  "demo_url": null,
+  "tags": [
+    "outbound-calling",
+    "lead-qualification",
+    "appointment-booking",
+    "airtable-integration",
+    "multi-channel-follow-up",
+    "scheduled-automation",
+    "n8n-workflow"
+  ],
+  "contributor": {
+    "github": "Awaisali36"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-08T19:30:00-05:00",
+  "updated_at": "2025-06-08T19:30:00-05:00",
+  "license": "MIT"
+}
