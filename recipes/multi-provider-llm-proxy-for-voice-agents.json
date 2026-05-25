@@ -1,0 +1,44 @@
+{
+  "id": "multi-provider-llm-proxy-for-voice-agents",
+  "slug": "multi-provider-llm-proxy-for-voice-agents",
+  "title": "Multi Provider LLM Proxy for Voice Agents",
+  "description": "An OpenAI-compatible chat completions proxy that enables voice agents to use multiple LLM providers including Amazon Bedrock Agents and OpenAI. Provides an extensible architecture for switching between providers through environment variables or request parameters, supporting both streaming and non-streaming responses with exact OpenAI format matching.",
+  "framework": "Custom",
+  "use_case": "internal-knowledge-assistant",
+  "industry": "saas",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "Deepgram Aura-2",
+    "telephony": "Web Only"
+  },
+  "config": {
+    "default_model": "gpt-4o-mini",
+    "sse_streaming": true,
+    "provider_options": [
+      "bedrock",
+      "openai"
+    ],
+    "openai_compatible": true,
+    "supports_streaming": true
+  },
+  "github_source_url": "https://github.com/deepgram-devs/deepgram-voice-agent-client-llm-proxy",
+  "demo_url": null,
+  "tags": [
+    "llm-proxy",
+    "multi-provider",
+    "openai-compatible",
+    "bedrock",
+    "extensible"
+  ],
+  "contributor": {
+    "github": "deepgram-devs"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-08T10:30:00-07:00",
+  "updated_at": "2025-06-08T10:30:00-07:00",
+  "license": "MIT"
+}
