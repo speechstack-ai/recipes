@@ -1,0 +1,65 @@
+{
+  "id": "nurse-triage-intake-voice-assistant",
+  "slug": "nurse-triage-intake-voice-assistant",
+  "title": "Nurse Triage Intake Voice Assistant",
+  "description": "A real-time voice agent that conducts nurse intake triage by asking patients about symptoms, onset, severity, and red-flag indicators. The agent asks one question at a time, collects structured health data, and escalates immediately if severe symptoms are reported. Built using Vonage Video sessions with Pipecat orchestration and Amazon Nova Sonic for low-latency speech-to-speech interaction.",
+  "framework": "Pipecat",
+  "use_case": "triage",
+  "industry": "healthcare",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Vonage"
+  },
+  "metrics": {
+    "latency_p50_ms": 650,
+    "latency_p95_ms": 1300,
+    "latency_display": "650-1300ms time-to-first-audio",
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": "You are a nurse triage voice assistant. Ask one short question at a time. Capture symptom, onset, severity from 1-10, and red flags. Keep responses concise and empathetic. If severe red-flag symptoms are mentioned, advise immediate emergency care and escalate.",
+  "prompt_file": null,
+  "config": {
+    "model_id": "amazon.nova-2-sonic-v1:0",
+    "transport": "vonage_video_connector",
+    "use_cases": [
+      "post-visit follow-up triage",
+      "symptom assessment routing",
+      "medication adherence check",
+      "preliminary safety screening"
+    ],
+    "media_mode": "routed",
+    "audio_format": "16kHz_mono_16bit_PCM",
+    "llm_model_id": "amazon.nova-lite-v1:0",
+    "session_layer": "vonage_video",
+    "initial_message": "Hello, I am your nurse intake assistant. I will ask a few brief triage questions to help route your care quickly. What symptom are you experiencing now?",
+    "agentcore_bootstrap": true
+  },
+  "github_source_url": "https://github.com/nexmo-se/vonage-pipecat-aws-agentcore",
+  "demo_url": null,
+  "tags": [
+    "nurse-triage",
+    "symptom-intake",
+    "medical-screening",
+    "health-assessment",
+    "red-flag-detection",
+    "vonage-video",
+    "amazon-bedrock",
+    "agentcore",
+    "nova-sonic",
+    "speech-to-speech"
+  ],
+  "contributor": {
+    "github": "KittPhi"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-26T00:00:00Z",
+  "updated_at": "2025-05-26T00:00:00Z",
+  "license": "MIT"
+}
