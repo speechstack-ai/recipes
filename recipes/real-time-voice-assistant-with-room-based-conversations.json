@@ -1,0 +1,41 @@
+{
+  "id": "real-time-voice-assistant-with-room-based-conversations",
+  "slug": "real-time-voice-assistant-with-room-based-conversations",
+  "title": "Real-Time Voice Assistant with Room-Based Conversations",
+  "description": "A voice AI assistant that joins LiveKit rooms and holds natural conversations with participants. The agent automatically greets users, transcribes speech in real-time, generates intelligent responses, and speaks back with natural-sounding voices over WebRTC connections.",
+  "framework": "LiveKit Agents",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4.1",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "LiveKit SIP"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "vad_model": "silero",
+    "console_mode": true,
+    "turn_detector": "multilingual"
+  },
+  "github_source_url": "https://github.com/deepgram/examples/tree/main/examples/030-livekit-agents-python",
+  "demo_url": null,
+  "tags": [
+    "webrtc",
+    "real-time",
+    "room-based",
+    "multi-modal",
+    "voice-activity-detection"
+  ],
+  "contributor": {
+    "github": "lukeocodes"
+  },
+  "source": "github_discovery",
+  "created_at": "2026-04-09T12:00:00Z",
+  "updated_at": "2026-04-09T12:00:00Z",
+  "license": "MIT"
+}
