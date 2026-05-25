@@ -1,0 +1,59 @@
+{
+  "id": "hotel-front-desk-receptionist",
+  "slug": "hotel-front-desk-receptionist",
+  "title": "Hotel Front Desk Receptionist",
+  "description": "A voice agent that handles hotel front desk interactions including booking inquiries, reservations, and general guest services. Designed as a testing platform for real-time speech recognition and turn-detection configurations over telephony, with detailed session logging for analysis.",
+  "framework": "LiveKit Agents",
+  "use_case": "after-hours-receptionist",
+  "industry": "hospitality",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "AssemblyAI Universal-2",
+    "llm": "Claude Opus 4.5",
+    "tts": "Cartesia Sonic-3",
+    "telephony": "LiveKit SIP"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "set_booking_mode",
+        "description": "Tool: set_booking_mode"
+      },
+      {
+        "name": "set_general_mode",
+        "description": "Tool: set_general_mode"
+      }
+    ],
+    "vad": "Silero VAD",
+    "recording": "16 kHz stereo (caller-left, agent-right)",
+    "stt_variants": [
+      "AssemblyAI Universal Streaming (u3-rt-pro)",
+      "Deepgram Flux (flux-general-en)"
+    ],
+    "turn_detection": "LiveKit English turn detection",
+    "interruption_mode": "vad",
+    "noise_cancellation": "Krisp BVC Telephony",
+    "transcript_logging": "JSONL with word-level timing, confidences, VAD state, false-interruption signals"
+  },
+  "github_source_url": "https://github.com/dlange-aai/hotel-booking-agent",
+  "demo_url": null,
+  "tags": [
+    "telephony",
+    "testing",
+    "turn-detection",
+    "vad",
+    "session-logging",
+    "dual-stt"
+  ],
+  "contributor": {
+    "github": "dlange-aai"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-15T10:30:00-07:00",
+  "updated_at": "2025-05-15T10:30:00-07:00",
+  "license": "Proprietary"
+}
