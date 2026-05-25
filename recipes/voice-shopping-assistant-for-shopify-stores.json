@@ -1,0 +1,65 @@
+{
+  "id": "voice-shopping-assistant-for-shopify-stores",
+  "slug": "voice-shopping-assistant-for-shopify-stores",
+  "title": "Voice Shopping Assistant for Shopify Stores",
+  "description": "A conversational AI shopping assistant that helps customers discover and purchase products from Shopify stores using natural voice interactions. Users describe what they want in plain language across 32+ languages, and the agent performs intelligent product search and provides recommendations through a seamless voice-first interface.",
+  "framework": "ElevenLabs Conversational",
+  "use_case": "sales",
+  "industry": "ecommerce",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "ElevenLabs Scribe",
+    "llm": "GPT-4o",
+    "tts": "ElevenLabs Turbo v2.5",
+    "telephony": "Web Only"
+  },
+  "metrics": {
+    "latency_display": "Ultra-low latency",
+    "cost_display": null
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [
+      {
+        "name": "product_search",
+        "description": "Search Shopify product catalog based on natural language queries via MCP"
+      },
+      {
+        "name": "product_display",
+        "description": "Render interactive product cards with pricing and details"
+      }
+    ],
+    "features": [
+      "Natural turn-taking",
+      "Interruption handling",
+      "Dynamic product discovery",
+      "Real-time product rendering",
+      "Multi-language automatic detection"
+    ],
+    "webrtc_enabled": true,
+    "mcp_integration": "SSE (Server-Sent Events) protocol to MCP storefront server",
+    "supported_languages": 32,
+    "multi_language_support": true
+  },
+  "github_source_url": "https://github.com/elevenlabs/eleven.shopping",
+  "demo_url": "https://eleven.shopping",
+  "tags": [
+    "ecommerce",
+    "shopping",
+    "product-discovery",
+    "voice-commerce",
+    "shopify",
+    "mcp",
+    "multi-language"
+  ],
+  "contributor": {
+    "github": "thorwebdev"
+  },
+  "source": "vendor_showcase",
+  "created_at": "2025-05-27T12:00:00Z",
+  "updated_at": "2025-05-27T12:00:00Z",
+  "license": "MIT"
+}
