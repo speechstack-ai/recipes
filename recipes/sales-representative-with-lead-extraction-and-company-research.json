@@ -36,7 +36,7 @@
     "company_research_caching": true
   },
   "github_source_url": "https://github.com/cartesia-ai/line/tree/main/examples/sales_with_leads",
-  "demo_url": null,
+  "demo_url": "https://github.com/cartesia-ai/line/tree/main/examples/sales_with_leads",
   "tags": [
     "lead-extraction",
     "company-research",
