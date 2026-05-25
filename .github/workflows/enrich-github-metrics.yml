@@ -1,8 +1,7 @@
 name: Enrich GitHub metrics
 
-# Fetches stars/watchers for recipe source repos and opens a PR with
-# data/github-metrics.json. Main is branch-protected, so we never push
-# metrics commits directly to main.
+# Fetches stars/watchers for recipe source repos and commits data/github-metrics.json.
+# Requires "GitHub Actions" on the default-branch ruleset bypass list (see docs/automation-and-branch-rules.md).
 
 on:
   schedule:
@@ -24,7 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
 
@@ -37,33 +35,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run enrich-github
 
-      - name: Open PR with metrics if changed
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit metrics if changed
         run: |
-          if [[ -z "$(git status --porcelain data/github-metrics.json)" ]]; then
-            echo "::notice::GitHub metrics unchanged — no PR needed"
-            exit 0
+          if [[ -n "$(git status --porcelain data/github-metrics.json)" ]]; then
+            git config user.name "speechstack-bot"
+            git config user.email "bot@speechstack.com"
+            git add data/github-metrics.json
+            git commit -m "chore: refresh GitHub metrics for recipes"
+            git push
+            echo "::notice::Pushed updated github-metrics.json"
+          else
+            echo "::notice::GitHub metrics unchanged"
           fi
-
-          BRANCH="bot/github-metrics-$(date -u +%Y%m%d%H%M)"
-          git config user.name "speechstack-bot"
-          git config user.email "bot@speechstack.com"
-          git checkout -b "$BRANCH"
-          git add data/github-metrics.json
-          git commit -m "chore: refresh GitHub metrics for recipes"
-          git push -u origin "$BRANCH"
-
-          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number -q '.[0].number' || true)
-          if [[ -n "$EXISTING" ]]; then
-            echo "::notice::PR #$EXISTING already open for $BRANCH"
-            exit 0
-          fi
-
-          gh pr create \
-            --base main \
-            --head "$BRANCH" \
-            --title "chore: refresh GitHub metrics" \
-            --body "Automated update from the **Enrich GitHub metrics** workflow. Merging updates \`data/github-metrics.json\` for Top/Trending on speechstack.com."
-
-          echo "::notice::Opened PR for $BRANCH"
