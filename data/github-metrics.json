@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "fetchedAt": "2026-05-25T21:13:12.076Z",
+  "recipes": {
+    "deepgram-dental-receptionist": {
+      "stars": 1,
+      "watchers": 0,
+      "forks": 2,
+      "repoPushedAt": "2026-03-23T17:24:21Z",
+      "repo": "deepgram-devs/deepgram-voice-agent-inbound-telephony",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    },
+    "elevenlabs-twilio-sales-agent": {
+      "stars": 603,
+      "watchers": 27,
+      "forks": 282,
+      "repoPushedAt": "2026-05-22T01:53:48Z",
+      "repo": "elevenlabs/elevenlabs-examples",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    },
+    "livekit-drivethru-ordering": {
+      "stars": 10681,
+      "watchers": 98,
+      "forks": 3168,
+      "repoPushedAt": "2026-05-25T19:32:11Z",
+      "repo": "livekit/agents",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    },
+    "livekit-warm-transfer-support": {
+      "stars": 10681,
+      "watchers": 98,
+      "forks": 3168,
+      "repoPushedAt": "2026-05-25T19:32:11Z",
+      "repo": "livekit/agents",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    },
+    "pipecat-twilio-quickstart": {
+      "stars": 5,
+      "watchers": 0,
+      "forks": 5,
+      "repoPushedAt": "2025-10-22T01:42:44Z",
+      "repo": "pipecat-ai/pipecat-quickstart-phone-bot",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    },
+    "vapi-healthcare-scheduler": {
+      "stars": 7,
+      "watchers": 0,
+      "forks": 2,
+      "repoPushedAt": "2026-01-23T05:11:14Z",
+      "repo": "VapiAI/examples",
+      "fetchedAt": "2026-05-25T21:13:12.076Z"
+    }
+  }
+}

@@ -10,6 +10,7 @@
   "scripts": {
     "validate": "node scripts/validate.js",
     "liveness": "node scripts/liveness.js",
+    "enrich-github": "node scripts/enrich-github-metrics.js",
     "check": "npm run validate && npm run liveness"
   },
   "devDependencies": {

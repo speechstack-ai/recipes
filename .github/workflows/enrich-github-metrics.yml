@@ -1,0 +1,49 @@
+name: Enrich GitHub metrics
+
+# Fetches stars/watchers for recipe source repos and commits data/github-metrics.json.
+# The web app sync job merges this sidecar into public/data/recipes.json.
+
+on:
+  schedule:
+    # 07:42 UTC daily — offset from other cron jobs.
+    - cron: "42 7 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "recipes/**"
+      - "scripts/enrich-github-metrics.js"
+
+concurrency:
+  group: enrich-github-metrics
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch GitHub repo stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run enrich-github
+
+      - name: Commit metrics if changed
+        run: |
+          if [[ -n "$(git status --porcelain data/github-metrics.json)" ]]; then
+            git config user.name "speechstack-bot"
+            git config user.email "bot@speechstack.com"
+            git add data/github-metrics.json
+            git commit -m "chore: refresh GitHub metrics for recipes"
+            git push
+            echo "::notice::Pushed updated github-metrics.json"
+          else
+            echo "::notice::GitHub metrics unchanged"
+          fi

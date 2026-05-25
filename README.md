@@ -49,10 +49,12 @@ speechstack-recipes/
 ├── data/
 │   ├── vendors.json            # Allowed vendor names per stack layer
 │   ├── use-cases.json          # Controlled vocabulary
-│   └── industries.json         # Controlled vocabulary
+│   ├── industries.json         # Controlled vocabulary
+│   └── github-metrics.json     # Generated: stars/watchers per recipe (CI)
 ├── scripts/
 │   ├── validate.js             # Local validation (also runs in CI)
-│   └── liveness.js             # URL liveness checks
+│   ├── liveness.js             # URL liveness checks
+│   └── enrich-github-metrics.js # Refresh GitHub popularity sidecar
 └── .github/workflows/
     └── validate.yml            # Runs validation on every PR
 ```
