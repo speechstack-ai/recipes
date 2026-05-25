@@ -42,7 +42,7 @@
     "end_of_turn_confidence_threshold": 0.4
   },
   "github_source_url": "https://github.com/kelsey-aai/voice-agent-livekit-universal-3-pro",
-  "demo_url": null,
+  "demo_url": "https://github.com/kelsey-aai/voice-agent-livekit-universal-3-pro",
   "tags": [
     "livekit",
     "assemblyai",
