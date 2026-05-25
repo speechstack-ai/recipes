@@ -1,0 +1,40 @@
+{
+  "id": "langchain-agent-voice-demo-with-vocode-core",
+  "slug": "langchain-agent-voice-demo-with-vocode-core",
+  "title": "LangChain Agent Voice Demo with Vocode Core",
+  "description": "A demonstration application that integrates LangChain agents with Vocode Core to enable conversational voice interactions powered by LangChain tooling. This template showcases how to build voice agents that leverage LangChain's agent framework for complex reasoning and tool usage in voice conversations.",
+  "framework": "Vocode",
+  "use_case": "other",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-2",
+    "llm": "GPT-4o",
+    "tts": "Azure Neural TTS",
+    "telephony": "Web Only"
+  },
+  "raw_prompt": null,
+  "prompt_file": null,
+  "config": {
+    "tools": [],
+    "langchain_integration": true
+  },
+  "github_source_url": "https://github.com/vocodedev/vocode-core/tree/main/apps/langchain_agent",
+  "demo_url": null,
+  "tags": [
+    "langchain",
+    "demo",
+    "agent",
+    "tools",
+    "vocode"
+  ],
+  "contributor": {
+    "github": "vocodedev"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-24T12:00:00+00:00",
+  "updated_at": "2025-05-24T12:00:00+00:00",
+  "license": "MIT"
+}
