@@ -1,0 +1,44 @@
+{
+  "id": "telephony-bridge-for-real-time-voice-agents",
+  "slug": "telephony-bridge-for-real-time-voice-agents",
+  "title": "Telephony Bridge for Real Time Voice Agents",
+  "description": "A telephony server that connects telephony providers like Twilio, Vonage, and Plivo with real-time communication platforms including Pipecat, LiveKit, and Jay.so. Enables seamless call routing, metrics collection, and observability for voice AI deployments. Includes an example taxi dispatcher agent that handles ride bookings and customer inquiries.",
+  "framework": "Pipecat",
+  "use_case": "other",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Deepgram Nova-3",
+    "llm": "GPT-4o-mini",
+    "tts": "ElevenLabs Flash v2.5",
+    "telephony": "Twilio Voice"
+  },
+  "raw_prompt": "You are Navi, an AI-powered taxi dispatcher handling customer calls 24/7 with accuracy and professionalism. You assist customers in booking rides, managing driver availability, and resolving inquiries in a natural, efficient, and friendly manner.\n\nYou prioritize clear communication, confirming pickup details, estimating wait times, and ensuring a smooth booking experience. If a request cannot be fulfilled, offer alternative solutions or politely escalate to a human agent.\n\nMaintain a warm, professional, and helpful tone. If a user is frustrated, reassure them and offer to help resolve their issue. Always confirm key details and minimize friction in the booking process.",
+  "prompt_file": null,
+  "config": {
+    "llm_model": "gpt-4o-mini",
+    "greeting_message": "Thanks for calling, I'm Navi, your AI-powered taxi dispatcher. How can I help you today?",
+    "telephony_params": {
+      "Record": "false"
+    }
+  },
+  "github_source_url": "https://github.com/steinathan/telephony-server",
+  "demo_url": null,
+  "tags": [
+    "telephony",
+    "bridge",
+    "infrastructure",
+    "multi-provider",
+    "call-routing",
+    "taxi-dispatcher"
+  ],
+  "contributor": {
+    "github": "steinathan"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-06-08T12:00:00-08:00",
+  "updated_at": "2025-06-08T12:00:00-08:00",
+  "license": "BSD-2-Clause"
+}
