@@ -1,0 +1,47 @@
+{
+  "id": "multimodal-voice-and-vision-assistant-for-ios",
+  "slug": "multimodal-voice-and-vision-assistant-for-ios",
+  "title": "Multimodal Voice and Vision Assistant for iOS",
+  "description": "A voice AI assistant with realtime audio and video input capabilities. Built for iOS, it supports front and back camera switching, natural voice conversations, live screen sharing, and background operation. The assistant can observe and interact seamlessly while users work on other tasks, making it suitable for hands-free assistance scenarios.",
+  "framework": "LiveKit Agents",
+  "use_case": "support",
+  "industry": "other",
+  "languages": [
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "Google Speech-to-Text",
+    "llm": "Gemini 2.5 Pro",
+    "tts": "Google Cloud TTS",
+    "telephony": "Web Only"
+  },
+  "config": {
+    "multimodal": true,
+    "video_input": true,
+    "image_format": "JPEG",
+    "max_image_size": "1024x1024",
+    "screen_sharing": true,
+    "frame_rate_idle": 0.3,
+    "camera_switching": true,
+    "background_support": true,
+    "frame_rate_speaking": 1
+  },
+  "github_source_url": "https://github.com/livekit-examples/vision-demo",
+  "demo_url": "https://agents-playground.livekit.io/",
+  "tags": [
+    "multimodal",
+    "vision",
+    "ios",
+    "mobile",
+    "screen-sharing",
+    "background-mode",
+    "gemini-live"
+  ],
+  "contributor": {
+    "github": "bcherry"
+  },
+  "source": "github_discovery",
+  "created_at": "2025-05-14T10:30:00-07:00",
+  "updated_at": "2025-05-14T10:30:00-07:00",
+  "license": "Apache-2.0"
+}
