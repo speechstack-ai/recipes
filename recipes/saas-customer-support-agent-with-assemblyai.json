@@ -1,7 +1,7 @@
 {
   "id": "saas-customer-support-agent-with-assemblyai",
   "slug": "saas-customer-support-agent-with-assemblyai",
-  "title": "SaaS Customer Support Agent with AssemblyAI",
+  "title": "SaaS Customer Support Agent",
   "description": "A real-time conversational voice agent that provides customer support for a fictional SaaS product (Acme Cloud). Features smart turn detection using terminal punctuation, barge-in support, and keyterms boosting for domain-specific terminology. Built to handle typical support queries with ultra-low latency and natural conversation flow.",
   "framework": "Pipecat",
   "use_case": "support",
@@ -42,7 +42,7 @@
     "min_end_of_turn_silence_when_confident": 100
   },
   "github_source_url": "https://github.com/sampleapp-ai/assemblyai-voice-agent-pipecat",
-  "demo_url": null,
+  "demo_url": "https://github.com/sampleapp-ai/assemblyai-voice-agent-pipecat",
   "tags": [
     "customer-support",
     "saas",

@@ -43,7 +43,7 @@
     "rtvi_function_calling": true
   },
   "github_source_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/travel-companion",
-  "demo_url": null,
+  "demo_url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/travel-companion",
   "tags": [
     "travel",
     "location-based",

@@ -19,7 +19,7 @@
   "prompt_file": null,
   "config": {},
   "github_source_url": "https://github.com/livekit-examples/multi-agent-python",
-  "demo_url": null,
+  "demo_url": "https://github.com/livekit-examples/multi-agent-python",
   "tags": [
     "multi-agent",
     "python",

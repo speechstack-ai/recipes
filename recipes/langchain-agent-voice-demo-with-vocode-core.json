@@ -1,7 +1,7 @@
 {
   "id": "langchain-agent-voice-demo-with-vocode-core",
   "slug": "langchain-agent-voice-demo-with-vocode-core",
-  "title": "LangChain Agent Voice Demo with Vocode Core",
+  "title": "LangChain Agent Voice Demo",
   "description": "A demonstration application that integrates LangChain agents with Vocode Core to enable conversational voice interactions powered by LangChain tooling. This template showcases how to build voice agents that leverage LangChain's agent framework for complex reasoning and tool usage in voice conversations.",
   "framework": "Vocode",
   "use_case": "other",
@@ -22,7 +22,7 @@
     "langchain_integration": true
   },
   "github_source_url": "https://github.com/vocodedev/vocode-core/tree/main/apps/langchain_agent",
-  "demo_url": null,
+  "demo_url": "https://github.com/vocodedev/vocode-core/tree/main/apps/langchain_agent",
   "tags": [
     "langchain",
     "demo",

@@ -40,7 +40,7 @@
     "assistant_name": "Alex (Customer Handler)"
   },
   "github_source_url": "https://github.com/VapiAI/examples/tree/main/assistants/multi_intent_handler",
-  "demo_url": null,
+  "demo_url": "https://dashboard.vapi.ai/import?id=multi_intent_handler",
   "tags": [
     "intent-routing",
     "rag",
