@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "fetchedAt": "2026-05-25T21:34:24.831Z",
+  "fetchedAt": "2026-05-31T10:02:38.574Z",
   "recipes": {
     "ai-sales-agent-for-b2b-product-outreach": {
       "stars": 2,
@@ -8,7 +8,7 @@
       "forks": 0,
       "repoPushedAt": "2025-08-06T19:04:37Z",
       "repo": "zatiyab/AI-Call-Salesman",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "autonomous-incident-manager-for-site-reliability-engineering": {
       "stars": 0,
@@ -16,7 +16,7 @@
       "forks": 0,
       "repoPushedAt": "2026-03-27T23:42:00Z",
       "repo": "Badri-Narayanan/Autonomous-SRE",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "autonomous-sales-outbound-calling-agent": {
       "stars": 1,
@@ -24,7 +24,7 @@
       "forks": 0,
       "repoPushedAt": "2025-08-23T03:54:54Z",
       "repo": "yashh2417/cold_campaign_agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "barbershop-appointment-scheduling-receptionist": {
       "stars": 0,
@@ -32,7 +32,7 @@
       "forks": 0,
       "repoPushedAt": "2026-02-08T23:16:03Z",
       "repo": "BigSur23/elite-cuts-voice-ai",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "basic-voice-agent-for-general-conversation": {
       "stars": 21,
@@ -40,7 +40,7 @@
       "forks": 3,
       "repoPushedAt": "2025-10-28T16:28:37Z",
       "repo": "cartesia-ai/cartesia-livekit-voice-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "clinical-trial-recruitment-voice-agent": {
       "stars": 2,
@@ -48,15 +48,15 @@
       "forks": 1,
       "repoPushedAt": "2026-04-10T20:06:54Z",
       "repo": "deepgram/deepgram-amazon-connect-sample-apps",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "content-filtering-voice-assistant-with-guardrails": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "conversational-ai-agent-with-streaming-stt-and-tts": {
       "stars": 408,
@@ -64,7 +64,7 @@
       "forks": 118,
       "repoPushedAt": "2026-01-07T16:33:08Z",
       "repo": "deepgram-devs/deepgram-ai-agent-demo",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "conversational-article-discussion-assistant": {
       "stars": 20,
@@ -72,7 +72,7 @@
       "forks": 3,
       "repoPushedAt": "2024-08-28T22:43:09Z",
       "repo": "cartesia-ai/dev-showcase",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "conversational-phone-agent-with-natural-interruptions": {
       "stars": 0,
@@ -80,15 +80,15 @@
       "forks": 2,
       "repoPushedAt": "2026-04-16T22:18:30Z",
       "repo": "plivo/python-agents-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "conversational-voice-agent-with-tool-calling": {
       "stars": 1,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": "2026-05-25T01:27:00Z",
+      "repoPushedAt": "2026-05-31T01:31:13Z",
       "repo": "deepgram/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "customer-service-agent-with-function-calling-and-order-management": {
       "stars": 22,
@@ -96,7 +96,7 @@
       "forks": 23,
       "repoPushedAt": "2026-03-02T21:54:54Z",
       "repo": "deepgram-devs/flask-agent-function-calling-demo",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "customer-service-agent-with-function-calling": {
       "stars": 3,
@@ -104,15 +104,15 @@
       "forks": 2,
       "repoPushedAt": "2025-04-24T18:43:40Z",
       "repo": "deepgram/the-bobs",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "customer-support-agent-with-ticket-status-lookup": {
-      "stars": 248,
+      "stars": 247,
       "watchers": 12,
       "forks": 119,
-      "repoPushedAt": "2026-05-25T15:47:51Z",
+      "repoPushedAt": "2026-05-29T10:57:43Z",
       "repo": "HumeAI/hume-api-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "customer-support-and-appointment-booking-assistant": {
       "stars": 0,
@@ -120,7 +120,7 @@
       "forks": 0,
       "repoPushedAt": "2026-05-07T20:02:32Z",
       "repo": "twilio-samples/conversationrelay-ai-demo",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "deepgram-dental-receptionist": {
       "stars": 1,
@@ -128,15 +128,15 @@
       "forks": 2,
       "repoPushedAt": "2026-03-23T17:24:21Z",
       "repo": "deepgram-devs/deepgram-voice-agent-inbound-telephony",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "dental-clinic-appointment-booking-agent": {
-      "stars": 41,
+      "stars": 42,
       "watchers": 2,
-      "forks": 15,
+      "forks": 16,
       "repoPushedAt": "2025-01-30T18:52:47Z",
       "repo": "mjunaidca/appointment-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "dental-office-appointment-scheduling-agent": {
       "stars": 1,
@@ -144,7 +144,7 @@
       "forks": 2,
       "repoPushedAt": "2026-03-23T17:24:21Z",
       "repo": "deepgram-devs/deepgram-voice-agent-inbound-telephony",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "desktop-robot-assistant-with-voice-controlled-manipulation": {
       "stars": 5,
@@ -152,15 +152,15 @@
       "forks": 2,
       "repoPushedAt": "2026-05-17T22:59:48Z",
       "repo": "livekit-examples/embodied-ai-hackathon",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "doctor-appointment-scheduler-with-intake-form": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "ecommerce-refund-processing-assistant": {
       "stars": 18,
@@ -168,7 +168,7 @@
       "forks": 19,
       "repoPushedAt": "2025-07-08T14:58:46Z",
       "repo": "pBread/twilio-agentic-voice-assistant",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "elder-care-advisor-for-adult-children": {
       "stars": 0,
@@ -176,15 +176,15 @@
       "forks": 0,
       "repoPushedAt": "2026-05-23T18:20:57Z",
       "repo": "flaminshinjan/emoha-poc",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "elevenlabs-twilio-sales-agent": {
-      "stars": 603,
+      "stars": 606,
       "watchers": 27,
       "forks": 282,
       "repoPushedAt": "2026-05-22T01:53:48Z",
       "repo": "elevenlabs/elevenlabs-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "festival-group-planning-assistant": {
       "stars": 0,
@@ -192,7 +192,7 @@
       "forks": 0,
       "repoPushedAt": "2026-03-13T02:45:32Z",
       "repo": "YichiZ/festival-coordinator",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "five-minute-inbound-lead-qualification-and-transfer": {
       "stars": 83,
@@ -200,7 +200,7 @@
       "forks": 30,
       "repoPushedAt": "2023-12-19T02:57:58Z",
       "repo": "Bland-AI/Bland-AI-Cookbooks",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "flowise-ai-voice-agent-with-twilio-conversationrelay": {
       "stars": 1,
@@ -208,7 +208,7 @@
       "forks": 2,
       "repoPushedAt": "2026-04-10T13:47:07Z",
       "repo": "twilio-samples/cr-flowiseai",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "general-assistant-voice-chatbot-with-audio-streaming": {
       "stars": 5,
@@ -216,7 +216,7 @@
       "forks": 0,
       "repoPushedAt": "2025-04-14T05:26:16Z",
       "repo": "plivo/plivo-audiostream-integration-guides",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "general-purpose-conversational-voice-agent-with-nvidia-nim": {
       "stars": 86,
@@ -224,7 +224,7 @@
       "forks": 22,
       "repoPushedAt": "2025-05-05T18:44:42Z",
       "repo": "daily-co/nimble-pipecat",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "general-purpose-voice-agent-with-low-latency-streaming": {
       "stars": 2,
@@ -232,15 +232,15 @@
       "forks": 1,
       "repoPushedAt": "2025-07-31T20:36:21Z",
       "repo": "gsharp-aai/voice-agent-aai-elevenlabs-openai",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "general-purpose-voice-agent-with-open-source-nvidia-models": {
-      "stars": 557,
+      "stars": 559,
       "watchers": 5,
       "forks": 96,
-      "repoPushedAt": "2026-05-25T02:40:30Z",
+      "repoPushedAt": "2026-05-30T13:14:35Z",
       "repo": "pipecat-ai/nemotron-january-2026",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "healthcare-clinic-voice-receptionist": {
       "stars": 2,
@@ -248,7 +248,7 @@
       "forks": 0,
       "repoPushedAt": "2026-04-24T06:33:17Z",
       "repo": "JeevanMovva/aria-voice-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "healthcare-prescription-savings-outreach-agent": {
       "stars": 1,
@@ -256,7 +256,7 @@
       "forks": 1,
       "repoPushedAt": "2026-04-10T16:01:53Z",
       "repo": "deepgram/deepgram-patient-connect",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "hotel-front-desk-agent-with-smart-backchannel-filtering": {
       "stars": 0,
@@ -264,7 +264,7 @@
       "forks": 0,
       "repoPushedAt": "2026-04-29T20:24:40Z",
       "repo": "AssemblyAI-Solutions/livekit-interruption-filters",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "hotel-front-desk-receptionist": {
       "stars": 0,
@@ -272,7 +272,7 @@
       "forks": 0,
       "repoPushedAt": "2026-04-22T14:26:20Z",
       "repo": "dlange-aai/hotel-booking-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "inbound-and-outbound-phone-bot-with-daily-and-plivo": {
       "stars": 0,
@@ -280,7 +280,7 @@
       "forks": 2,
       "repoPushedAt": "2026-04-16T22:18:30Z",
       "repo": "plivo/python-agents-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "inbound-phone-order-status-agent": {
       "stars": 0,
@@ -288,7 +288,7 @@
       "forks": 0,
       "repoPushedAt": "2026-05-19T15:50:37Z",
       "repo": "kelsey-aai/twilio-voice-agent-assemblyai",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "insurance-lead-follow-up-agent": {
       "stars": 3,
@@ -296,15 +296,15 @@
       "forks": 3,
       "repoPushedAt": "2026-03-23T17:21:49Z",
       "repo": "deepgram-devs/deepgram-voice-agent-outbound-telephony",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "interactive-choose-your-own-adventure-storytelling": {
-      "stars": 289,
+      "stars": 294,
       "watchers": 4,
-      "forks": 109,
-      "repoPushedAt": "2026-05-22T17:15:40Z",
+      "forks": 114,
+      "repoPushedAt": "2026-05-30T06:23:35Z",
       "repo": "pipecat-ai/pipecat-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "interactive-voice-game-for-discovering-secret-crushes": {
       "stars": 3,
@@ -312,7 +312,7 @@
       "forks": 1,
       "repoPushedAt": "2026-02-23T20:07:23Z",
       "repo": "daily-co/pipecat-crush-quest",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "ivr-phone-tree-with-llm-function-calling": {
       "stars": 0,
@@ -320,7 +320,7 @@
       "forks": 1,
       "repoPushedAt": "2025-09-10T13:35:47Z",
       "repo": "daily-demos/daily-bots-phone-tree",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "kubernetes-sre-voice-agent-with-mcp-tools": {
       "stars": 68,
@@ -328,31 +328,31 @@
       "forks": 17,
       "repoPushedAt": "2025-10-15T00:04:49Z",
       "repo": "den-vasyliev/voice-mcp-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "langchain-agent-voice-demo-with-vocode-core": {
-      "stars": 3749,
-      "watchers": 49,
-      "forks": 656,
+      "stars": 3750,
+      "watchers": 48,
+      "forks": 655,
       "repoPushedAt": "2024-11-15T22:16:58Z",
       "repo": "vocodedev/vocode-core",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "livekit-drivethru-ordering": {
-      "stars": 10681,
+      "stars": 10753,
       "watchers": 98,
-      "forks": 3168,
-      "repoPushedAt": "2026-05-25T19:32:11Z",
+      "forks": 3177,
+      "repoPushedAt": "2026-05-30T18:53:32Z",
       "repo": "livekit/agents",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "livekit-warm-transfer-support": {
-      "stars": 10681,
+      "stars": 10753,
       "watchers": 98,
-      "forks": 3168,
-      "repoPushedAt": "2026-05-25T19:32:11Z",
+      "forks": 3177,
+      "repoPushedAt": "2026-05-30T18:53:32Z",
       "repo": "livekit/agents",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "medical-assistant-for-clinical-note-taking": {
       "stars": 15,
@@ -360,7 +360,7 @@
       "forks": 14,
       "repoPushedAt": "2025-07-09T14:12:42Z",
       "repo": "deepgram-devs/voice-agent-medical-assistant-demo",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "medical-office-receptionist-for-appointment-booking-and-triage": {
       "stars": 2,
@@ -368,55 +368,63 @@
       "forks": 0,
       "repoPushedAt": "2026-03-13T19:54:58Z",
       "repo": "RaheesAhmed/MediVoice-AI",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-agent-in-app-voice-assistant-with-web-search-knowledge-base-and-account-ac": {
-      "stars": 73777,
+      "stars": 73878,
       "watchers": 995,
-      "forks": 12479,
-      "repoPushedAt": "2026-05-22T21:42:38Z",
+      "forks": 12502,
+      "repoPushedAt": "2026-05-30T23:02:27Z",
       "repo": "openai/openai-cookbook",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
+    },
+    "multi-agent-sales-lead-qualification-and-consultation-system": {
+      "stars": 32,
+      "watchers": 1,
+      "forks": 17,
+      "repoPushedAt": "2026-03-23T19:49:10Z",
+      "repo": "deepgram-devs/deepgram-voice-agent-multi-agent",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-agent-voice-ai-workflow-with-python": {
       "stars": 16,
       "watchers": 1,
       "forks": 6,
-      "repoPushedAt": "2026-05-25T08:40:12Z",
+      "repoPushedAt": "2026-05-29T22:48:49Z",
       "repo": "livekit-examples/multi-agent-python",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-agent-voice-framework-for-customer-service-and-chat-supervision": {
-      "stars": 6877,
+      "stars": 6878,
       "watchers": 132,
-      "forks": 1092,
+      "forks": 1091,
       "repoPushedAt": "2026-01-07T18:38:52Z",
       "repo": "openai/openai-realtime-agents",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-agent-voice-pipeline-with-transcription-and-synthesis": {
       "stars": 1,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": "2026-05-25T01:27:00Z",
+      "repoPushedAt": "2026-05-31T01:31:13Z",
       "repo": "deepgram/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-intent-call-router-with-rag-instructions": {
-      "stars": 7,
+      "stars": 8,
       "watchers": 0,
       "forks": 2,
       "repoPushedAt": "2026-01-23T05:11:14Z",
       "repo": "VapiAI/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-provider-llm-proxy-for-voice-agents": {
       "stars": 3,
       "watchers": 0,
-      "forks": 2,
+      "forks": 3,
       "repoPushedAt": "2025-11-27T03:03:19Z",
       "repo": "deepgram-devs/deepgram-voice-agent-client-llm-proxy",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-purpose-voice-agent-showcase": {
       "stars": 0,
@@ -424,7 +432,7 @@
       "forks": 0,
       "repoPushedAt": "2026-05-08T17:53:07Z",
       "repo": "AssemblyAI-Solutions/voice-agent-api-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multi-user-browser-voice-agent-with-webrtc-transport": {
       "stars": 0,
@@ -432,7 +440,7 @@
       "forks": 0,
       "repoPushedAt": "2026-04-30T18:16:20Z",
       "repo": "kelsey-aai/voice-agent-livekit",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "multimodal-voice-and-vision-assistant-for-ios": {
       "stars": 85,
@@ -440,7 +448,7 @@
       "forks": 21,
       "repoPushedAt": "2026-03-10T23:39:39Z",
       "repo": "livekit-examples/vision-demo",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "openclaw-phone-assistant-with-semantic-turn-detection": {
       "stars": 77,
@@ -448,7 +456,7 @@
       "forks": 11,
       "repoPushedAt": "2026-02-09T04:54:36Z",
       "repo": "deepgram/deepclaw",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "outbound-call-agent-with-voicemail-detection-and-transfer": {
       "stars": 94,
@@ -456,15 +464,15 @@
       "forks": 38,
       "repoPushedAt": "2026-04-10T18:03:45Z",
       "repo": "livekit-examples/outbound-caller-python",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "outbound-sales-assistant-for-airpods": {
       "stars": 487,
       "watchers": 15,
-      "forks": 218,
+      "forks": 219,
       "repoPushedAt": "2024-12-13T19:25:32Z",
       "repo": "twilio-labs/call-gpt",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "phone-based-voice-agent-with-web-search": {
       "stars": 0,
@@ -472,7 +480,7 @@
       "forks": 0,
       "repoPushedAt": "2026-05-08T18:12:57Z",
       "repo": "AssemblyAI-Solutions/voice-agent-api-twilio-example",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "phone-call-handling-voice-agent": {
       "stars": 0,
@@ -480,7 +488,7 @@
       "forks": 2,
       "repoPushedAt": "2026-04-16T22:18:30Z",
       "repo": "plivo/python-agents-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "pipecat-twilio-quickstart": {
       "stars": 5,
@@ -488,15 +496,15 @@
       "forks": 5,
       "repoPushedAt": "2025-10-22T01:42:44Z",
       "repo": "pipecat-ai/pipecat-quickstart-phone-bot",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "pizza-ordering-voice-agent": {
       "stars": 0,
       "watchers": 0,
       "forks": 1,
-      "repoPushedAt": "2026-05-23T13:12:00Z",
+      "repoPushedAt": "2026-05-29T19:44:41Z",
       "repo": "deepgram-devs/pizza-voice-agent-workshop",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "pstn-voice-assistant-with-real-time-transcription-and-barge-in": {
       "stars": 1,
@@ -504,111 +512,111 @@
       "forks": 1,
       "repoPushedAt": "2025-10-16T21:14:38Z",
       "repo": "tchancse/vonage-deepgram-voice-agent",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-conversational-voice-bot-with-turn-detection": {
       "stars": 1,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": "2026-05-25T01:27:00Z",
+      "repoPushedAt": "2026-05-31T01:31:13Z",
       "repo": "deepgram/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-multilingual-translation-between-customer-and-contact-center-agent": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "twilio-samples/live-translation-openai-realtime-api"
+      "stars": 125,
+      "watchers": 6,
+      "forks": 43,
+      "repoPushedAt": "2024-09-30T13:23:48Z",
+      "repo": "twilio-samples/live-translation-openai-realtime-api",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-speech-transcription-frontend": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "livekit-examples/transcription-frontend-groq"
+      "stars": 18,
+      "watchers": 2,
+      "forks": 17,
+      "repoPushedAt": "2026-05-31T00:37:37Z",
+      "repo": "livekit-examples/transcription-frontend-groq",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-voice-agent-with-neural-turn-detection": {
       "stars": 0,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "kelsey-aai/voice-agent-livekit-universal-3-pro"
+      "repoPushedAt": "2026-03-30T20:36:12Z",
+      "repo": "kelsey-aai/voice-agent-livekit-universal-3-pro",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-voice-agent-with-openai-and-twilio": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "rehan-dev/ai-call-agent"
+      "stars": 42,
+      "watchers": 2,
+      "forks": 21,
+      "repoPushedAt": "2024-12-26T18:23:16Z",
+      "repo": "rehan-dev/ai-call-agent",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-voice-assistant-with-room-based-conversations": {
       "stars": 1,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": "2026-05-25T01:27:00Z",
+      "repoPushedAt": "2026-05-31T01:31:13Z",
       "repo": "deepgram/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "real-time-web-form-filling-voice-agent": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "saas-customer-support-agent-with-assemblyai": {
       "stars": 0,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "sampleapp-ai/assemblyai-voice-agent-pipecat"
+      "repoPushedAt": "2026-03-03T21:54:03Z",
+      "repo": "sampleapp-ai/assemblyai-voice-agent-pipecat",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "sales-representative-with-lead-extraction-and-company-research": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "smart-city-voice-ai-demo-for-harbour-city-operations": {
       "stars": 0,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "deepgram-devs/smart-city"
+      "repoPushedAt": "2026-05-11T16:40:16Z",
+      "repo": "deepgram-devs/smart-city",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "sms-one-time-password-verification-for-identity-confirmation": {
-      "stars": 7,
+      "stars": 8,
       "watchers": 0,
       "forks": 2,
       "repoPushedAt": "2026-01-23T05:11:14Z",
       "repo": "VapiAI/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "space-trading-game-with-autonomous-ship-ai": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "pipecat-ai/gradient-bang"
+      "stars": 399,
+      "watchers": 2,
+      "forks": 64,
+      "repoPushedAt": "2026-05-30T09:25:14Z",
+      "repo": "pipecat-ai/gradient-bang",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "spanish-dental-clinic-receptionist-agent": {
       "stars": 0,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "numoru-ia/voice-agent-es"
+      "repoPushedAt": "2026-04-20T03:28:38Z",
+      "repo": "numoru-ia/voice-agent-es",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "streaming-voice-agent-with-gemini-flash-and-silero-barge-in": {
       "stars": 0,
@@ -616,127 +624,127 @@
       "forks": 2,
       "repoPushedAt": "2026-04-16T22:18:30Z",
       "repo": "plivo/python-agents-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "technical-interview-practice-agent-with-real-time-feedback": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "telephony-bridge-for-real-time-voice-agents": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "steinathan/telephony-server"
+      "stars": 23,
+      "watchers": 3,
+      "forks": 3,
+      "repoPushedAt": "2025-02-02T11:42:24Z",
+      "repo": "steinathan/telephony-server",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "telephony-integration-connector-for-conversational-ai": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "nexmo-se/elevenlabs-agent-ws-connector"
+      "stars": 4,
+      "watchers": 3,
+      "forks": 6,
+      "repoPushedAt": "2025-07-10T00:46:08Z",
+      "repo": "nexmo-se/elevenlabs-agent-ws-connector",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "telephony-voice-agent-with-inbound-and-outbound-call-handling": {
       "stars": 0,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "AssemblyAI/voice-agent-api-twilio-example"
+      "repoPushedAt": "2026-04-28T22:56:47Z",
+      "repo": "AssemblyAI/voice-agent-api-twilio-example",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "travel-companion-with-location-based-recommendations": {
-      "stars": 289,
+      "stars": 294,
       "watchers": 4,
-      "forks": 109,
-      "repoPushedAt": "2026-05-22T17:15:40Z",
+      "forks": 114,
+      "repoPushedAt": "2026-05-30T06:23:35Z",
       "repo": "pipecat-ai/pipecat-examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "two-truths-and-a-lie-interactive-game-bot": {
-      "stars": 0,
+      "stars": 4,
       "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "daily-co/pcc-gemini-twilio"
+      "forks": 8,
+      "repoPushedAt": "2026-01-27T21:24:18Z",
+      "repo": "daily-co/pcc-gemini-twilio",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "two-way-conversational-speech-assistant": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "twilio-samples/speech-assistant-openai-realtime-api-python"
+      "stars": 347,
+      "watchers": 7,
+      "forks": 194,
+      "repoPushedAt": "2025-09-02T14:50:53Z",
+      "repo": "twilio-samples/speech-assistant-openai-realtime-api-python",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "vapi-healthcare-scheduler": {
-      "stars": 7,
+      "stars": 8,
       "watchers": 0,
       "forks": 2,
       "repoPushedAt": "2026-01-23T05:11:14Z",
       "repo": "VapiAI/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "voice-agent-with-visual-data-verification-for-lead-capture": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "jeffo777/input-right"
+      "stars": 37,
+      "watchers": 1,
+      "forks": 10,
+      "repoPushedAt": "2025-08-30T12:59:03Z",
+      "repo": "jeffo777/input-right",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "voicemail-detection-assistant-for-outbound-calls": {
-      "stars": 7,
+      "stars": 8,
       "watchers": 0,
       "forks": 2,
       "repoPushedAt": "2026-01-23T05:11:14Z",
       "repo": "VapiAI/examples",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "vonage-voice-api-websocket-connector-for-multiple-ai-engines": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "nexmo-se/voice-to-ai-engines"
+      "stars": 1,
+      "watchers": 3,
+      "forks": 3,
+      "repoPushedAt": "2025-10-30T02:03:48Z",
+      "repo": "nexmo-se/voice-to-ai-engines",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "weather-information-assistant-with-function-calling": {
-      "stars": 0,
-      "watchers": 0,
-      "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "daily-co/pcc-groq-llama"
+      "stars": 72,
+      "watchers": 7,
+      "forks": 15,
+      "repoPushedAt": "2025-09-16T11:30:13Z",
+      "repo": "daily-co/pcc-groq-llama",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "web-research-agent-with-real-time-search-and-content-extraction": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "web-research-assistant-with-real-time-search": {
       "stars": 99,
       "watchers": 5,
       "forks": 41,
-      "repoPushedAt": "2026-05-19T19:18:32Z",
+      "repoPushedAt": "2026-05-29T21:32:33Z",
       "repo": "cartesia-ai/line",
-      "fetchedAt": "2026-05-25T21:34:24.831Z"
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     },
     "whatsapp-voice-conversational-agent": {
-      "stars": 0,
+      "stars": 9,
       "watchers": 0,
       "forks": 0,
-      "repoPushedAt": null,
-      "fetchedAt": "2026-05-25T21:34:24.831Z",
-      "repo": "daily-co/pcc-gemini-whatsapp"
+      "repoPushedAt": "2025-10-09T21:16:20Z",
+      "repo": "daily-co/pcc-gemini-whatsapp",
+      "fetchedAt": "2026-05-31T10:02:38.574Z"
     }
   }
 }
