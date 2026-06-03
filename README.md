@@ -1,18 +1,29 @@
 # Speechstack Recipes
 
-> The open-source collection of production-ready recipes for building voice AI agents.
+> 94+ production-ready voice AI agent stacks. Every recipe ships with real prompts, measured latency, and per-minute unit economics.
+
+🌐 **Browse the directory:** [speechstack.com](https://speechstack.com)
+
+📊 **What's inside:** 94+ recipes · 10+ frameworks (Vapi, Pipecat, LiveKit, Retell, Bland, Vocode) · 8 STT vendors (Deepgram, AssemblyAI, Whisper, Google, Speechmatics…) · 7 TTS vendors (ElevenLabs, Cartesia, PlayHT, Azure, Resemble…) · 12+ industries
+
+## What's a recipe?
+
+A working voice agent documented as a single JSON file:
+
+- **Framework** (Vapi / Pipecat / LiveKit / Retell / Bland / Vocode / …)
+- **STT** + **LLM** + **TTS** + **Telephony**
+- The actual system prompt (long-form Markdown)
+- Measured latency (P50/P90 where known)
+- Per-minute cost breakdown
+- A link to public source code or a live demo
+
+If it doesn't ship all of that, it's a blog post link — not a recipe.
 
 ## Scope
 
 **SpeechStack covers voice + AI templates that combine 2+ tools for a specific outcome. We do not cover general AI tools.**
 
-Every recipe in this repo must satisfy the [4-criteria template definition](./CONTRIBUTING.md#the-4-criteria-template-definition): schema-able artifact, forkable or copyable, specific named outcome, multi-component stack. PRs that don't clear the bar are closed, not merged "as drafts."
-
----
-
-This repository powers [speechstack.com](https://speechstack.com) — a curated directory of real-world voice agent implementations across Vapi, Retell, LiveKit, Cartesia, ElevenLabs, Pipecat, Bland, and the rest of the voice AI stack.
-
-Each recipe is a single JSON file that documents a working voice agent: its use case, the full stack (telephony + STT + LLM + TTS), unit economics, latency, prompt, configuration, and a link to a public source repo or demo.
+Every recipe must satisfy the [4-criteria template definition](./CONTRIBUTING.md#the-4-criteria-template-definition): schema-able artifact, forkable or copyable, specific named outcome, multi-component stack. PRs that don't clear the bar are closed, not merged "as drafts."
 
 ## Contributing a recipe
 
@@ -21,10 +32,10 @@ Got a voice agent you've built? We'd love to feature it.
 1. Copy [`recipes/_template.json`](./recipes/_template.json) to `recipes/your-recipe-slug.json`
 2. Fill in the fields (see [`schema/recipe.schema.json`](./schema/recipe.schema.json) for the spec)
 3. Open a pull request
-4. Our bot will validate it automatically in ~30 seconds
+4. Our bot validates it automatically in ~30 seconds
 5. We review and merge within 48 hours
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide. New contributors: check the [`good first issue`](https://github.com/speechstack-ai/recipes/labels/good%20first%20issue) label for recipes the community has specifically requested.
 
 ## What makes a good recipe
 
@@ -68,7 +79,7 @@ npm install
 npm run validate
 ```
 
-This runs the same checks the CI does:
+This runs the same checks CI does:
 - JSON schema validation
 - Recipe ID and slug uniqueness
 - Vendor name allowlist
@@ -79,10 +90,10 @@ This runs the same checks the CI does:
 
 This repository uses a dual license:
 
-- **Code** (schemas, validators, scripts, workflows) is licensed under [MIT](./LICENSE-CODE).
-- **Recipe data** (everything in `recipes/`) is licensed under [CC-BY 4.0](./LICENSE-DATA).
+- **Code** (schemas, validators, scripts, workflows) is [MIT](./LICENSE-CODE).
+- **Recipe data** (everything in `recipes/`) is [CC-BY 4.0](./LICENSE-DATA).
 
-In plain English: you can use the recipes in commercial work as long as you credit Speechstack. You can use the code however you want. See [LICENSE.md](./LICENSE.md) for the explainer.
+Plain English: use the code however you want; use the recipes in commercial work as long as you credit Speechstack. See [LICENSE.md](./LICENSE.md) for the explainer.
 
 ## Stats
 
