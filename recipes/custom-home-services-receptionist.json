@@ -1,0 +1,76 @@
+{
+  "id": "custom-home-services-receptionist",
+  "slug": "custom-home-services-receptionist",
+  "title": "After-Hours Receptionist for Home Services",
+  "description": "A production AI receptionist pattern for small service businesses that answers inbound calls 24/7, identifies the caller's intent, qualifies the request, books appointments when appropriate, and routes or transfers calls when human handling is needed. The reference implementation uses OpenAI Realtime over Twilio SIP telephony.",
+  "framework": "Custom",
+  "use_case": "after-hours-receptionist",
+  "industry": "home-services",
+  "languages": [
+    "fr-FR",
+    "en-US"
+  ],
+  "pipeline": {
+    "stt": "OpenAI gpt-4o-transcribe",
+    "llm": "GPT-4o",
+    "tts": "OpenAI gpt-4o-mini-tts",
+    "telephony": "Twilio SIP"
+  },
+  "metrics": {
+    "latency_p50_ms": null,
+    "latency_p95_ms": null,
+    "latency_display": null,
+    "cost_per_minute_usd_min": null,
+    "cost_per_minute_usd_max": null,
+    "cost_display": null
+  },
+  "raw_prompt": "Answer incoming calls for a small service business. Identify the caller's primary intent, collect only the information needed to handle or route the request, avoid inventing business information, offer appointment booking when configured, and transfer or route the call when human intervention is required. Keep the conversation concise, use the caller's language, and produce one structured outcome per call.",
+  "prompt_file": null,
+  "config": {
+    "barge_in": true,
+    "tools": [
+      {
+        "name": "book_appointment",
+        "description": "Book an appointment in the connected calendar when the caller requests an available slot"
+      },
+      {
+        "name": "route_call",
+        "description": "Route or transfer the call according to the detected intent and configured business rules"
+      },
+      {
+        "name": "send_notification",
+        "description": "Send a structured call summary or alert after the call"
+      }
+    ],
+    "features": [
+      "intent-qualification",
+      "multilingual-conversations",
+      "appointment-booking",
+      "call-routing",
+      "call-transfer",
+      "post-call-summary"
+    ]
+  },
+  "github_source_url": "https://github.com/alexbo-git/kalyvox-mcp",
+  "demo_url": "https://kalyvox.ai/en/ai-answering-service",
+  "tags": [
+    "ai-receptionist",
+    "small-business",
+    "inbound-calls",
+    "appointment-booking",
+    "call-routing",
+    "multilingual"
+  ],
+  "contributor": {
+    "github": "alexbo-git",
+    "name": "Alex",
+    "website": "https://kalyvox.ai"
+  },
+  "source": "direct_pr",
+  "verified": false,
+  "featured": false,
+  "created_at": "2026-09-26T00:00:00+02:00",
+  "updated_at": "2026-09-27T00:00:00+02:00",
+  "license": "CC-BY-4.0",
+  "notes": "Reference implementation derived from Kalyvox, an AI receptionist platform for SMBs. Kalyvox uses OpenAI Realtime speech-to-speech over Twilio SIP; the schema currently requires separate canonical STT, LLM and TTS fields and does not list an OpenAI Realtime model, so those pipeline fields are compatibility placeholders rather than a claim that Kalyvox uses a cascaded STT/LLM/TTS architecture."
+}
